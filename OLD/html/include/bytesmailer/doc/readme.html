@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Bytesmailer</title>
+		<link rel="stylesheet" href="bm.css">
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>
+					<h1>Bytesmailer</h1>
+				</td>
+				<td>
+					<div align="right">
+						<img src="bmlogo.gif" width="88" height="31" border="0"></div>
+				</td>
+			</tr>
+		</table>
+		<p>BytesMailer is the PHP class to send mails, especially with a lot of attachments, and in multibyte encoding character (ex. UTF-8 or ISO-2022-JP).</p>
+		<div align="right">
+			
+		</div>
+		<p>Of course, singlebyte encoding characters are treated suitably.</p>
+		<p>This class is lisenced with <a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</a>.</p>
+		<p><a href="http://sourceforge.net/projects/bytesmailer/">Project page</a> in Soureforge.net.</p>
+		<p><a href="http://sourceforge.jp/projects/bytesmailer/">Project page</a> in Soureforge.jp. (written in Japanese, CVS is here)</p>
+		<p></p>
+		<h2>Way to use</h2>
+		<h3>Simple way </h3>
+		<p>is like this.</p>
+		<pre>include_once('BytesMailer_DIR/include.php');
+$bm = new bytesmailer;
+$bm-&gt;internalCharacterEncoding('UTF-8', true);
+$bm-&gt;addAddr('foo@bar.net', 'Foo Bar');
+$bm-&gt;addAddr('mrx@bar.net', 'Mr. X', 'from');
+$bm-&gt;setSubject('This is a test.');
+$bm-&gt;addTextMessage('I send this mail with bytesmailer. So are you fine?');
+$bm-&gt;send();
+</pre>
+		<p>Important is internalCharacterEncoding() function. First parameter is the character encoding name, the second is if the encoding is multibyte or not.</p>
+		<p>You can add any number of address you need.</p>
+		<pre>$bm-&gt;addAddr('foo1@bar.net', 'Foo1 Bar');
+$bm-&gt;addAddr('foo2@bar.net', 'Foo2 Bar');
+$bm-&gt;addAddr('foo3@bar.net', 'Foo3 Bar', 'cc');
+$bm-&gt;addAddr('foo4@bar.net', '', 'cc');
+$bm-&gt;addAddr('foo5@bar.net', '', 'bcc');
+
+$bm-&gt;addAddr('mry@bar.net', 'Mr. Y', 'from');
+$bm-&gt;addAddr('mrz@bar.net', 'Mr. Z', 'from');</pre>
+		<p>When you only know mail address, make the second parameter (displayname) empty ''.</p>
+		<p>And 'replyTo' is possible.</p>
+		<pre>$bm-&gt;addAddr('reply@bar.net', 'reply dept.', 'replyTo');</pre>
+		<p>confirm reading is also OK.</p>
+		<pre>$bm-&gt;addAddr('confirm@bar.net', 'confirm', 'confirmReadingTo');</pre>
+		<p>Use address group as follows.</p>
+		<pre>$group =&amp; $bm-&gt;addGroup('strong group', 'to');
+$group-&gt;addAddr('member@bar.net', 'member');</pre>
+		<h3>Attachment</h3>
+		<p>When you want add attachment file,</p>
+		<pre>$bm-&gt;addAttachmentFromFile('logo.gif');</pre>
+<p>You can attach any number of files.
+		<p>When the real filename is deferent from the name you want to show in the mail,</p>
+		
+		<pre>$bm-&gt;addAttachmentFromFile('logo.gif', 'icon.gif');</pre>
+	<p>And not from file, from binary data,	
+		<pre>$bm-&gt;addAttachment($binary_data, 'image', 'gif', 'icon.gif');</pre>
+		<p><b>Encoding of mail</b>
+		<p>In some languages like Japanese, the encoding of mail is deferent from the internal.</p>
+		<p>For the languages, use mailCharacterEncoding() function.</p>
+		<pre>$bm = new bytesmailer;
+$bm-&gt;internalCharacterEncoding('EUC-JP', true);
+$bm->mailCharacterEncoding('ISO-2022-JP', true);</pre>
+		<p>Encoding convertion would be done in a few encoding, EUC-JP to IS0-2022-JP, UTF-8 to ISO-2022-JP and  EUC-JP to UTF-8.</p>
+		<p>When the convertion is impossible, the class try to use the encoding of internal  as of mail.</p>
+		<h3>SMTP and Sendmail</h3>
+		<p>When you do not want to use PHP's mail() function with any reason, you can use SMTP or sendmail directly. This feature is based on <a href="http://phpmailer.sourceforge.net/">PHPmailer</a>.</p>
+		<pre>$bm-&gt;setSendMethod('smtp', 'smtp.bar.net');
+$bm-&gt;send();</pre>
+		<p>or
+		<pre>$bm-&gt;setSendMethod('sendmail', '/usr/sbin/sendmail');
+$bm-&gt;send();</pre>
+		<hr>
+		<address><a href="mailto:haruki@planewave.org">Haruki Setoyama</a></address>
+		<address>$Id: readme.html,v 1.1 2003/06/25 13:44:59 haruki Exp $</address>
+	</body>
+
+</html>

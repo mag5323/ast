@@ -1,0 +1,11 @@
+Bytesmailer change log
+---
+0.1 alpha:
+ 2003.2.3
+ Initial release.
+-----
+0.2 beta
+ 2003.6.26
+ Major feature enhancements.
+ Api imploved, and a lot of bug fixes.
+ Docment. readme.html.

@@ -1,0 +1,711 @@
+﻿<!DOCTYPE HTML><!DOCTYPE html PUBLIC "" "">
+<HTML>
+<HEAD>
+<META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<TITLE>AS-TECH Welcome :: All Products</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META http-equiv="Content-Language" content="en">
+<META name="robots" content="noindex, nofollow">
+<LINK href="favicon.ico" 
+rel="shortcut icon" type="image/png">
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var number_format_dec = '.';
+var number_format_th = '';
+var number_format_point = '2';
+var store_language = 'en';
+var xcart_web_dir = "";
+var images_dir = "/skin/common_files/images";
+var lbl_no_items_have_been_selected = 'No items have been selected';
+var current_area = 'C';
+var skin_dir = '/skin/common_files';
+var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!";
+var lbl_field_required = "Field is required";
+var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid.";
+var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?";
+var txt_email_invalid = "Email address is invalid! Please correct";
+var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");
+var lbl_error = 'Error';
+var lbl_warning = 'Warning';
+var lbl_ok = 'OK';
+var lbl_yes = 'Yes';
+var lbl_no = 'No';
+var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';
+var is_admin_editor = false;
+var lbl_blockui_default_message = "Please wait...";
+var current_location = 'http://www.aopled.com';
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var lbl_error = 'Error';
+var lbl_warning = 'Warning';
+var lbl_information = 'Information';
+var lbl_go_to_last_edit_section = 'Go to the recent section';
+var topMessageDelay = [];
+topMessageDelay['i'] = 10*1000;
+topMessageDelay['w'] = 60*1000;
+topMessageDelay['e'] = 0*1000;
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css" rel="stylesheet" 
+type="text/css">
+<SCRIPT src="/skin/common_files/lib/jqueryui/jquery-ui.custom.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/jquery_ui_fix.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.ui.theme.css" rel="stylesheet" 
+type="text/css">
+<LINK href="images/jquery_ui.css" 
+rel="stylesheet" type="text/css">
+<SCRIPT type="text/javascript">
+//<![CDATA[
+
+$(document).ready( function() {
+  $('form').not('.skip-auto-validation').each( function() {
+    applyCheckOnSubmit(this);
+  });
+
+  $("input:submit, input:button, button, a.simple-button").button();
+});
+
+
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/ajax.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/top_message.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/popup_open.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery.blockUI.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery.blockUI.defaults.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/sticky.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+  var number_format_dec = '.'; var number_format_th = ''; var number_format_point = '2'; var store_language = 'en'; var xcart_web_dir = ""; var images_dir = "/skin/common_files/images"; var alt_images_dir = "/skin/aop/images"; var lbl_no_items_have_been_selected = 'No items have been selected'; var current_area = 'C';  var currency_format = "$x";  var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}."; var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}."; var txt_out_of_stock = "Out of stock"; var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}."; var is_limit = true; var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!"; var lbl_field_required = "Field is required"; var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid."; var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?"; var lbl_blockui_default_message = "Please wait..."; var lbl_error = 'Error'; var lbl_warning = 'Warning'; var lbl_information = 'Information'; var lbl_ok = 'OK'; var lbl_yes = 'Yes'; var lbl_no = 'No'; var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.'; var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';  var txt_email_invalid = "Email address is invalid! Please correct"; var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");  var is_admin_editor = false; var is_responsive_skin = "N"; var  topMessageDelay = []; topMessageDelay['i'] = 10*1000; topMessageDelay['w'] = 60*1000; topMessageDelay['e'] = 0*1000; 
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/modules/Banner_System/js/jquery.cycle.all.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg))) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?'; 
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/check_quantity.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/bootstrap/js/jquery.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/bootstrap/js/bootstrap.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/_includes/js/swiper.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/_includes/js/main-jquery.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css" 
+rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+<!--
+-->
+</STYLE>
+<LINK href="/skin/aop/css/altskin.css" rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+<!--
+-->
+</STYLE>
+<LINK href="images/bootstrap.css" rel="stylesheet" 
+type="text/css">
+<LINK href="images/xcart.css" 
+rel="stylesheet" type="text/css">
+<LINK href="images/font.css" 
+rel="stylesheet" type="text/css">
+<LINK href="images/swiper.min.css" 
+rel="stylesheet" type="text/css">
+<LINK href="images/global.css" 
+rel="stylesheet" type="text/css">
+<LINK href="http://www.aopled.com/favicon.ico" 
+rel="shortcut icon" type="image/png">
+<LINK href="http://www.aopled.com/home.php" 
+rel="canonical">
+<style type="text/css">
+.nobb {  border-bottom: none !important;
+}
+.sortable {  background: url('../../img/product/led/icon/sort_01_f.gif') no-repeat center center;
+}
+.sortbox {  width: 16px;
+  height: 24px;
+  margin: 0;
+  z-index: 2;
+  float: right;
+}
+.sorttitle {  margin: 0;
+  z-index: 1;
+}
+.tr {  height: 32px;
+}
+.unit {
+	color: #000000;
+}
+td.led_color1 {  width:10px;
+  padding-right:0px;
+  padding-left:1px;
+}
+td.led_color2 {  width:10px;
+  padding-right:0px;
+  padding-left:1px;
+}
+td.led_photo {  width:36px;
+  padding-right:0px;
+  padding-left:0px;
+}
+td.number {  text-align: right;
+  padding-right:5px;
+}
+</style>
+</HEAD>
+<BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
+<DIV id="wrap">
+  <HEADER id="header">
+    <DIV class="header-nav clears"><a href="index.html"><img src="images/astech_W.png" width="211" height="211"></a>
+      <DIV class="fr">
+        <UL id="nav">
+          <LI><A href="Profile.html">会社紹介</A></LI>
+          <LI><A href="all-products.html">製品紹介</A>
+            <DL>
+              <DD><A href="all-products.html">LED Lamps</A></DD>
+              <DD><A href="all-products.html">SMD LED</A></DD>
+              <DD><A href="all-products.html">ハイパワーLED</A></DD>
+              <DD><A href="all-products.html">IR LED</A></DD>
+              <DD><A href="all-products.html">LED 電球</A></DD>
+              <DD><A href="all-products.html">LED 照明</A></DD>
+              <DD><A href="all-products.html">パワーサプライ</A></DD>
+              <DD>&nbsp;</DD>
+              <DD>&nbsp;</DD>
+              <DD><A href="all-products.html">ODM Design</A></DD>
+              <DD> <A href="all-products.html">LED ディスプレイモジュール</A>              </DD>
+            </DL>
+          </LI>
+          <LI><A 
+  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
+        </UL>
+      </DIV>
+    </DIV>
+  </HEADER>
+  <STYLE>
+     .menu-details .col-md-1{ min-height:227px;}
+    </STYLE>
+  <DIV class="home-banner"></DIV>
+  <DIV class="featured">
+    <H2 class="ac">SMD LED</H2>
+  </DIV>
+  <table class="table table-bordered table-condensed" style="width:100%;">
+    <thead>
+      <tr>
+        <th id="example_0_stc_6" colspan="2" style="width: 100px;"><div align="center">Model Number</div></th>
+        <th width="94" id="example_0_stc_3" style="width:80px;">Size<br>
+          L x W x H</th>
+        <th width="142" id="example_0_stc_16" style="width: 44px;"><div align="center"><a class="sortbox sortable" id="example_0_sc_16" href="#"></a>
+        </div>
+          <div class="sorttitle">
+            <div align="center">Dominant<br>
+            Wavelength            </div>
+          </div></th>
+        <th width="142" id="example_0_stc_17" style="width: 44px;"><div align="center"><a class="sortbox sortable" id="example_0_sc_17" href="#"></a>Peak Emission<br>
+          Wavelength        <span class="unit"></span></div></th>
+        <th width="157" id="example_0_stc_19" style="width: 44px;"><a class="sortbox sortable" id="example_0_sc_19" href="#"></a>
+          <div class="sorttitle">Luminous Intensity<br>
+            <span class="unit">Typ(mcd)</span></div></th>
+        <th width="160" id="example_0_stc_20" style="width: 44px;"><a class="sortbox sortable" id="example_0_sc_20" href="#"></a>R<span class="unit">adiation Material</span></th>
+        <th width="79" id="example_0_stc_22" style="width: 44px;"><div class="sorttitle">Power Dissipation P(mW)</div></th>
+        <th width="85" id="example_0_stc_23" style="width: 44px;"><div class="sorttitle"><a class="sortbox sortable" id="example_0_sc_26" href="#"></a>
+            <div class="sorttitle">Directivity<br>
+              <span class="unit">2θ ½<br>
+                (degree)</span></div>
+        </div></th>
+        <th width="130" id="example_0_stc_26" style="width: 44px;"><div class="sorttitle"> Forward Voltage<br>
+              <span class="unit">VF(V)</span></div></th>
+        <th width="85" id="example_0_stc_27" style="width: 44px;"><a class="sortbox sortable" id="example_0_sc_27" href="#"></a>
+          <div class="sorttitle">
+            <p>Forward Current</p>
+            <p> I<sub>F</sub><span class="unit">(mA)</span></p>
+          </div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tr">
+        <td colspan="11" class="led_photo">2835</td>
+      </tr>
+      <tr class="tr">
+        <td width="53" rowspan="1" class="led_photo"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td width="125" rowspan="1" class="nowrap ptype">PJ2EDB-35Z </td>
+        <td class="led_color1">2.8 x 3.5 x 0.7</td>
+        <td class="number">460</td>
+        <td class="number">465</td>
+        <td class="number">2600</td>
+        <td class="number">InGaN </td>
+        <td class="number">875</td>
+        <td class="number">120</td>
+        <td class="number">3.0</td>
+        <td class="number">250</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">PJ2EPG-35Z </td>
+        <td class="led_color1">2.8 x 3.5 x 0.7</td>
+        <td class="number">535</td>
+        <td class="number">535</td>
+        <td class="number">12000</td>
+        <td class="number">InGaN </td>
+        <td class="number">875</td>
+        <td class="number">120</td>
+        <td class="number">2.8</td>
+        <td class="number">250</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_wwhite.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">PJ2EPWH-L20Z </td>
+        <td class="led_color1">2.8 x 3.5 x 0.7</td>
+        <td class="number">X=0.31 Y=0.32</td>
+        <td class="number">-</td>
+        <td class="number">39lm (Luminous Flux)</td>
+        <td class="number">InGaN </td>
+        <td class="number">540</td>
+        <td class="number">120</td>
+        <td class="number">3.2</td>
+        <td class="number">150</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">PJ2HSTR-20 </td>
+        <td class="led_color1">2.8 x 3.5 x 0.7</td>
+        <td class="number">625</td>
+        <td class="number">635</td>
+        <td class="number">4500</td>
+        <td class="number">AlInGaP/Si </td>
+        <td class="number">625</td>
+        <td class="number">120</td>
+        <td class="number">2.1</td>
+        <td class="number">250</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_yellow.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">PJ2HSTY-20 </td>
+        <td class="led_color1">2.8 x 3.5 x 0.7</td>
+        <td class="number">590</td>
+        <td class="number">595</td>
+        <td class="number">4500</td>
+        <td class="number">AlInGaP/Si </td>
+        <td class="number">625</td>
+        <td class="number">120</td>
+        <td class="number">2.1</td>
+        <td class="number">250</td>
+      </tr>
+      <tr class="tr">
+        <td colspan="11" class="led_photo">3528 P2</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P2EAB </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">470</td>
+        <td class="number">465</td>
+        <td class="number">500</td>
+        <td class="number">InGaN </td>
+        <td class="number">105</td>
+        <td class="number">120</td>
+        <td class="number">3.0</td>
+        <td class="number">30</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">P2EAG </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">525</td>
+        <td class="number">515</td>
+        <td class="number">2000</td>
+        <td class="number">InGaN </td>
+        <td class="number">108</td>
+        <td class="number">120</td>
+        <td class="number">3.0</td>
+        <td class="number">30</td>
+      </tr>
+      <tr class="tr">
+        <td rowspan="1" class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"></td>
+        <td class="nowrap ptype" rowspan="1">P2EATR </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">625</td>
+        <td class="number">635</td>
+        <td class="number">900</td>
+        <td class="number">AlInGaP/Sapphire </td>
+        <td class="number">120</td>
+        <td class="number">120</td>
+        <td class="number">2.1</td>
+        <td class="number">50</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_yellow.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P2EATY </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">590</td>
+        <td class="number">593</td>
+        <td class="number">910</td>
+        <td class="number">AlInGaP/Sapphire </td>
+        <td class="number">125</td>
+        <td class="number">120</td>
+        <td class="number">2.1</td>
+        <td class="number">50</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_bgreen.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P2EBWH-Z-1929 </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">X=0.20 Y=0.30</td>
+        <td class="number">-</td>
+        <td class="number">2000</td>
+        <td class="number">InGaN </td>
+        <td class="number">115</td>
+        <td class="number">120</td>
+        <td class="number">3.1</td>
+        <td class="number">30</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_wwhite.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P2EKWH-D </td>
+        <td class="led_color1">3.5 x 2.8 x 0.7</td>
+        <td class="number">X=0.41 Y=0.39</td>
+        <td class="number">-</td>
+        <td class="number">2000</td>
+        <td class="number">InGaN </td>
+        <td class="number">72</td>
+        <td class="number">120</td>
+        <td class="number">3.1</td>
+        <td class="number">30</td>
+      </tr>
+      <tr class="tr">
+        <td colspan="11" class="led_photo">3528 P4</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4EA2B-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9        </td>
+        <td class="number">470</td>
+        <td class="number">465</td>
+        <td class="number">700</td>
+        <td class="number">InGaN </td>
+        <td class="number">216</td>
+        <td class="number">120</td>
+        <td class="number">3.4</td>
+        <td class="number">100</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4EA2G-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">525</td>
+        <td class="number">515</td>
+        <td class="number">4000</td>
+        <td class="number">InGaN </td>
+        <td class="number">216</td>
+        <td class="number">120</td>
+        <td class="number">3.4</td>
+        <td class="number">100</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_bgreen.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4L2PE-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">505</td>
+        <td class="number">505</td>
+        <td class="number">1900</td>
+        <td class="number">InGaN </td>
+        <td class="number">216</td>
+        <td class="number">120</td>
+        <td class="number">3.4</td>
+        <td class="number">100</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4HSTR-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">625</td>
+        <td class="number">635</td>
+        <td class="number">2200</td>
+        <td class="number">AlInGaP </td>
+        <td class="number">130</td>
+        <td class="number">120</td>
+        <td class="number">2.2</td>
+        <td class="number">150</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_yellow.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4HSTY-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">590</td>
+        <td class="number">596</td>
+        <td class="number">2300</td>
+        <td class="number">AlInGaP </td>
+        <td class="number">130</td>
+        <td class="number">120</td>
+        <td class="number">2.5</td>
+        <td class="number">150</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_wwhite.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4EKWH-L14Z </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">X=0.41 Y=0.39</td>
+        <td class="number">-</td>
+        <td class="number">5500</td>
+        <td class="number">InGaN </td>
+        <td class="number">380</td>
+        <td class="number">120</td>
+        <td class="number">3.1</td>
+        <td class="number">150</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_white.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4EPWH-L14Z </td>
+        <td class="led_color1">3.5 x 2.8 x 1.9 </td>
+        <td class="number">X=0.31 Y=0.32</td>
+        <td class="number">-</td>
+        <td class="number">5500</td>
+        <td class="number">InGaN </td>
+        <td class="number">380</td>
+        <td class="number">120</td>
+        <td class="number">3.1</td>
+        <td class="number">150</td>
+      </tr>
+      <tr class="tr">
+        <td colspan="11" class="led_photo"> 5050</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P650ESPB </td>
+        <td class="led_color1">5.0 X 5.0 X 1.5</td>
+        <td class="number">470</td>
+        <td class="number">465</td>
+        <td class="number">800</td>
+        <td class="number">InGaN </td>
+        <td class="number">285</td>
+        <td class="number">120</td>
+        <td class="number">3.2</td>
+        <td class="number">90</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P650ESPG </td>
+        <td class="led_color1">5.0 X 5.0 X 1.5</td>
+        <td class="number">525</td>
+        <td class="number">515</td>
+        <td class="number">3000</td>
+        <td class="number">InGaN </td>
+        <td class="number">285</td>
+        <td class="number">120</td>
+        <td class="number">3.2</td>
+        <td class="number">90</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P650JRH </td>
+        <td class="led_color1">5.0 X 5.0 X 1.5</td>
+        <td class="number">640</td>
+        <td class="number">655</td>
+        <td class="number">900</td>
+        <td class="number">AlInGaP </td>
+        <td class="number">216</td>
+        <td class="number">120</td>
+        <td class="number">2.1</td>
+        <td class="number">90</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P650EATRWD </td>
+        <td class="led_color1">5.0 X 5.0 X 1.5</td>
+        <td class="number">625</td>
+        <td class="number">635</td>
+        <td class="number">6100</td>
+        <td class="number">AlInGaP/Sapphire </td>
+        <td class="number">672</td>
+        <td class="number">120</td>
+        <td class="number">2.5</td>
+        <td class="number">300</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_white.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P65050EPWH </td>
+        <td class="led_color1">5.0 X 5.0 X 1.5</td>
+        <td class="number">X=0.31 Y=0.32</td>
+        <td class="number">-</td>
+        <td class="number">5500</td>
+        <td class="number">InGaN </td>
+        <td class="number">324</td>
+        <td class="number">120</td>
+        <td class="number">3.1</td>
+        <td class="number">100</td>
+      </tr>
+      <tr class="tr">
+        <td colspan="11" class="led_photo"> Bi-color</td>
+      </tr>
+      <tr class="tr">
+        <td height="34" class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P43528JRHESPB </td>
+        <td class="led_color1">3.5 x 2.8 x 1.8</td>
+        <td class="number">15mA 640 / 470 </td>
+        <td class="number">15mA 660 / 465</td>
+        <td class="number">15mA 300 / 240 </td>
+        <td class="number">AlInGaP,Sapphire / InGaN </td>
+        <td class="number">120 / 150 </td>
+        <td class="number">120</td>
+        <td class="number">15mA 2.5 / 3.0 </td>
+        <td class="number">30 / 30 </td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P43528JRHESPG </td>
+        <td class="led_color1">3.5 x 2.8 x 1.8</td>
+        <td class="number">20mA 640 / 525 </td>
+        <td class="number">20mA 660 / 515</td>
+        <td class="number">20mA 300 / 800 </td>
+        <td class="number">AlInGaP,Sapphire / InGaN </td>
+        <td class="number">121 / 150 </td>
+        <td class="number">120</td>
+        <td class="number">20mA 2.1 / 3.1 </td>
+        <td class="number">50 / 50 </td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"><img src="image/DOTS/led_c_green.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P4REAG-BF </td>
+        <td class="led_color1">3.5 x 2.8 x 1.8</td>
+        <td class="number">30mA 625 / 20mA 525 </td>
+        <td class="number">30mA 635 / 20mA 515 </td>
+        <td class="number">30mA 1000 / 20mA 1000 </td>
+        <td class="number">AlInGaP / InGaN </td>
+        <td class="number">90 / 108 </td>
+        <td class="number">120</td>
+        <td class="number">30mA 2.5 / 20mA 2.8</td>
+        <td class="number">50 / 30 </td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"><img src="image/DOTS/led_c_yellow.png" width="20" height="20"></td>
+        <td class="nowrap ptype">P43528HSTRY </td>
+        <td class="led_color1">3.5 x 2.8 x 1.8</td>
+        <td class="number">50mA 625 / 590 </td>
+        <td class="number">50mA 635 / 593 </td>
+        <td class="number">50mA 2500 / 2500 </td>
+        <td class="number">AlInGaP / InGaN </td>
+        <td class="number">150 / 150 </td>
+        <td class="number">120</td>
+        <td class="number">50mA 2.5 / 2.5 </td>
+        <td class="number">50 / 30 </td>
+      </tr>
+      <tr class="tr">
+        <td colspan="11" class="led_photo">Multi-color</td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" width="20" height="20"><img src="image/DOTS/led_c_green.png" width="20" height="20"><img src="image/DOTS/led_c_blue.png" width="20" height="20"></td>
+        <td class="nowrap ptype"><div align="center">35FTA </div></td>
+        <td class="led_color1"><div align="center">3.5 x 2.8 x 1.8</div></td>
+        <td class="number"><div align="center">622 / 528 / 470 </div></td>
+        <td class="number"><div align="center">624 / 532 / 475 </div></td>
+        <td class="number"><div align="center">700 / 1600 / 350 </div></td>
+        <td class="number"><div align="center">AlInGaP / InGaN / InGaN </div></td>
+        <td class="number"><div align="center">120 / 108 / 108 </div></td>
+        <td class="number"><div align="center">115</div></td>
+        <td class="number"><div align="center">2.2 / 3.2 / 3.2 </div></td>
+        <td class="number"><div align="center">50 / 30 / 30 </div></td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_green.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_blue.png" alt="" width="20" height="20"></td>
+        <td class="nowrap ptype"><div align="center">32FTA-BF </div></td>
+        <td class="led_color1"><div align="center">3.5 x 2.8 x 1.8</div></td>
+        <td class="number"><div align="center">619 / 520 / 465 </div></td>
+        <td class="number"><div align="center">624 / 535 / 475 </div></td>
+        <td class="number"><div align="center">800 / 2000 / 440 </div></td>
+        <td class="number"><div align="center">AlInGaP / InGaN / InGaN </div></td>
+        <td class="number"><div align="center">120 / 108 / 108 </div></td>
+        <td class="number"><div align="center">115</div></td>
+        <td class="number"><div align="center">2.1 / 3.2 / 3.2 </div></td>
+        <td class="number"><div align="center">50 / 30 / 30 </div></td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_green.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_blue.png" alt="" width="20" height="20"></td>
+        <td class="nowrap ptype"><div align="center">P650RGB-BF </div></td>
+        <td class="led_color1"><div align="center">3.5 x 2.8 x 1.8</div></td>
+        <td class="number"><div align="center">625 / 525 / 470 </div></td>
+        <td class="number"><div align="center">635 / 520 / 460 </div></td>
+        <td class="number"><div align="center">550 / 1700 / 300 </div></td>
+        <td class="number"><div align="center">AlInGaP / InGaN / InGaN </div></td>
+        <td class="number"><div align="center">75 / 82.5 / 85 </div></td>
+        <td class="number"><div align="center">115</div></td>
+        <td class="number"><div align="center">2.0 / 2.9 / 3.0 </div></td>
+        <td class="number"><div align="center">30 / 25 / 25 </div></td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_green.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_blue.png" alt="" width="20" height="20"></td>
+        <td class="nowrap ptype"><div align="center">P43528RGBWD-2B </div></td>
+        <td class="led_color1"><div align="center">3.5 x 2.8 x 1.8</div></td>
+        <td class="number"><div align="center">625 / 525 / 470 </div></td>
+        <td class="number"><div align="center">635 / 520 / 460 </div></td>
+        <td class="number"><div align="center">400/ 500 / 110 </div></td>
+        <td class="number"><div align="center">AlInGaP / InGaN / InGaN </div></td>
+        <td class="number"><div align="center">72 / 90 / 90 </div></td>
+        <td class="number"><div align="center">120</div></td>
+        <td class="number"><div align="center">2.0 / 3.2 / 3.2 </div></td>
+        <td class="number"><div align="center">30 / 25 / 25 </div></td>
+      </tr>
+      <tr class="tr">
+        <td class="led_photo"><img src="image/DOTS/led_c_red.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_green.png" alt="" width="20" height="20"><img src="image/DOTS/led_c_blue.png" alt="" width="20" height="20"></td>
+        <td class="nowrap ptype"><div align="center">P43528RGBWD-3BF </div></td>
+        <td class="led_color1"><div align="center">3.5 x 2.8 x 1.8</div></td>
+        <td class="number"><div align="center">625 / 530 / 470 </div></td>
+        <td class="number"><div align="center">635 / 520 / 460 </div></td>
+        <td class="number"><div align="center">850 / 1650 / 330 </div></td>
+        <td class="number"><div align="center">AlInGaP / InGaN / InGaN </div></td>
+        <td class="number"><div align="center">72 / 90 / 90 </div></td>
+        <td class="number"><div align="center">120</div></td>
+        <td class="number"><div align="center">2.1 / 3.2 / 3.2 </div></td>
+        <td align="center" valign="middle" class="number"><div align="center">30 / 25 / 25 </div></td>
+      </tr>
+    </tbody>
+    <tbody>
+      
+        </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <FOOTER class="footer">
+    <div class="footer-top">
+      <div class="clears footer-nav">
+        <DIV class="fl">
+          <UL>
+            <LI><A href="Profile.html">会社紹介</A></LI>
+            <LI><A href="all-products.html">製品紹介</A></LI>
+            <LI><A 
+  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
+          </UL>
+        </DIV>
+        <div class="fr"></div>
+      </div>
+      <div class="clears ac">
+        <p>大阪府東大阪市長田東3-2-43 ｜ TEL: 06-6748-3660(代)｜FAX: 06-6747-3670｜<a href="mailto:info@a-stech.com">info@a-stech.com</a></p>
+      </div>
+    </div>
+    <DIV class="footer-bottom clears">
+      <DIV class="fl">
+        <P>© 2017 A-S TECH </P>
+      </DIV>
+      <DIV class="fr">
+        <UL>
+          <LI>TERMS</LI>
+          <LI><A href="privacy.html">PRIVACY 
+            POLICY</A></LI>
+        </UL>
+      </DIV>
+    </DIV>
+  </FOOTER>
+</DIV>
+</BODY>
+</HTML>

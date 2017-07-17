@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML><!DOCTYPE html PUBLIC "" "">
+<HTML>
+<HEAD>
+<META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<TITLE>AS-TECH Walcome :: Terms &amp; Conditions</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META http-equiv="Content-Language" content="en">
+<META name="robots" content="noindex, nofollow">
+<LINK href="favicon.ico" 
+rel="shortcut icon" type="image/png">
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var number_format_dec = '.';
+var number_format_th = '';
+var number_format_point = '2';
+var store_language = 'en';
+var xcart_web_dir = "";
+var images_dir = "/skin/common_files/images";
+var lbl_no_items_have_been_selected = 'No items have been selected';
+var current_area = 'C';
+var skin_dir = '/skin/common_files';
+var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!";
+var lbl_field_required = "Field is required";
+var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid.";
+var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?";
+var txt_email_invalid = "Email address is invalid! Please correct";
+var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");
+var lbl_error = 'Error';
+var lbl_warning = 'Warning';
+var lbl_ok = 'OK';
+var lbl_yes = 'Yes';
+var lbl_no = 'No';
+var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';
+var is_admin_editor = false;
+var lbl_blockui_default_message = "Please wait...";
+var current_location = 'http://www.aopled.com';
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var lbl_error = 'Error';
+var lbl_warning = 'Warning';
+var lbl_information = 'Information';
+var lbl_go_to_last_edit_section = 'Go to the recent section';
+var topMessageDelay = [];
+topMessageDelay['i'] = 10*1000;
+topMessageDelay['w'] = 60*1000;
+topMessageDelay['e'] = 0*1000;
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
+<SCRIPT src="/skin/common_files/lib/jqueryui/jquery-ui.custom.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/jquery_ui_fix.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.ui.theme.css" rel="stylesheet" 
+type="text/css">
+<LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
+<SCRIPT type="text/javascript">
+//<![CDATA[
+
+$(document).ready( function() {
+  $('form').not('.skip-auto-validation').each( function() {
+    applyCheckOnSubmit(this);
+  });
+
+  $("input:submit, input:button, button, a.simple-button").button();
+});
+
+
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/ajax.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/top_message.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/popup_open.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery.blockUI.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery.blockUI.defaults.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/js/sticky.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+  var number_format_dec = '.'; var number_format_th = ''; var number_format_point = '2'; var store_language = 'en'; var xcart_web_dir = ""; var images_dir = "/skin/common_files/images"; var alt_images_dir = "/skin/aop/images"; var lbl_no_items_have_been_selected = 'No items have been selected'; var current_area = 'C';  var currency_format = "$x";  var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}."; var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}."; var txt_out_of_stock = "Out of stock"; var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}."; var is_limit = true; var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!"; var lbl_field_required = "Field is required"; var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid."; var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?"; var lbl_blockui_default_message = "Please wait..."; var lbl_error = 'Error'; var lbl_warning = 'Warning'; var lbl_information = 'Information'; var lbl_ok = 'OK'; var lbl_yes = 'Yes'; var lbl_no = 'No'; var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.'; var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';  var txt_email_invalid = "Email address is invalid! Please correct"; var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");  var is_admin_editor = false; var is_responsive_skin = "N"; var  topMessageDelay = []; topMessageDelay['i'] = 10*1000; topMessageDelay['w'] = 60*1000; topMessageDelay['e'] = 0*1000; 
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/modules/Banner_System/js/jquery.cycle.all.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg))) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?'; 
+//]]>
+</SCRIPT>
+<SCRIPT src="/skin/common_files/js/check_quantity.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/bootstrap/js/jquery.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/bootstrap/js/bootstrap.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/_includes/js/swiper.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/skin/aop/_includes/js/main-jquery.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+<!--
+-->
+</STYLE>
+<LINK href="/skin/aop/css/altskin.css" rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+<!--
+-->
+</STYLE>
+<LINK href="images/bootstrap.css" rel="stylesheet" type="text/css">
+<LINK href="images/xcart.css" rel="stylesheet" type="text/css">
+<LINK href="images/font.css" 
+rel="stylesheet" type="text/css">
+<LINK href="images/swiper.min.css" rel="stylesheet" 
+type="text/css">
+<LINK href="images/global.css" rel="stylesheet" type="text/css">
+<LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
+<LINK href="http://www.aopled.com/terms-and-conditions.html" rel="canonical">
+</HEAD>
+<BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
+<DIV id="wrap">
+  <HEADER id="header">
+    <DIV class="header-nav clears"><a href="index.html"><img src="images/astech_W.png" width="211" height="211"></a>
+      <DIV class="fr">
+        <UL id="nav">
+          <LI><A href="Profile.html">会社紹介</A></LI>
+          <LI><A href="all-products.html">製品紹介</A>
+            <DL>
+              <DD><A href="all-products.html">LED Lamps</A></DD>
+              <DD><A href="all-products.html">SMD LED</A></DD>
+              <DD><A href="all-products.html">ハイパワーLED</A></DD>
+              <DD><A href="all-products.html">IR LED</A></DD>
+              <DD><A href="all-products.html">LED 電球</A></DD>
+              <DD><A href="all-products.html">LED 照明</A></DD>
+              <DD><A href="all-products.html">パワーサプライ</A></DD>
+              <DD><A href="all-products.html">PCB Assembly</A></DD>
+              <DD><A href="all-products.html">OEM サービス</A></DD>
+              <DD><A href="all-products.html">ODM Design</A></DD>
+              <DD><A href="all-products.html">LED ディスプレイモジュール</A></DD>
+            </DL>
+          </LI>
+          <LI><A 
+  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
+        </UL>
+      </DIV>
+    </DIV>
+  </HEADER>
+  <STYLE>
+     .menu-details .col-md-1{ min-height:227px;}
+    </STYLE>
+  <DIV class="contact-banner"><img src="images/Terms-banner.jpg"></DIV>
+  <DIV class="other-main">
+    <H1 class="ac">利用規約</H1>
+    <P><STRONG>1. です。 制御規定</strong> - これら諸条件は売り手と買い手、間に入った可能性があります販売の任意の契約を構成しなければならないし、当事者の権利を規定条項および条件によって専ら本支配しなければなりません。関係なくその文言、売り手、買い手の条件等によって受信したときの購入順序、受信確認、購入の確認またはその他執筆状態この引用から追加のまたは異なる条項本契約に基づいて提供される製品に係る本件手術承諾としてならない: ただし、すべてこのような異なる取引条件の追加とみなす (2207 (カリフォルニア州商業コードおよび異議の通知の 2)(b) の意味での材料の変更基づき (2207 (商業コードがここに与えられたカリフォルニア州の 2)(c)。売り手はいかなる保証も表明または保証に関する契約を除くなど、提供される製品がここに含まれる明示的とこの引用語句の変更または当事者の書面による合意によってを除いて変更可能性がないです。</p>
+    <p><strong>2. 名言 & 価格</strong> - 国内の輸出出荷、価格別段の記載がない限り、本船渡売り手の工場と。事前に支払われていないの受注は、クレジット部門の承認が適用されます。この引用語句は自動的に 30 30 暦日を期限切れ問題の日を形成し、その期間内の通知によって終了されます。明記、しない限り、価格明記された製品の販売者が購入者を請求書が有効になりますこれらの工場出荷時。商品の価格は、製造、販売、領収書、総所得、職業、使用に上記税金の一般性、他の同様の税金を制限することがなくすべての都市、州、連邦消費税等を除く。ときに適用されるような税金や税金として追加されます請求書に別途の購入によって支払われるため、法律によって承認されている場合、購入者は税務当局に直接このような税や税金を支払うことができます。添付書類を配送と売り手のドラフト対象の認定のアメリカ合衆国銀行と売り手のアカウントの確認取消不能信用状は輸出受注を添付しなければなりません。すべての文書化されたコレクションのコストは、購入者に課金されます。すべての支払いは、パーでアメリカ合衆国の法定通貨で行われます。</p>
+    <p><strong>3. します遅延</strong> - 製品の出荷と配送契約、受注のパフォーマンスが偶発的に、遅延によって、引き起こされる直接的または間接的または任意の方法で労働から生じる紛争の性質、不足、材料、輸送または労働、神の行為の公共の敵、政府規制または制限、売り手の生産スケジュール、またはその他の原因のまたは (かどうかこれらの本質的に同じような色物指定) を出品者の制御を越える原因と。、販売購入起因によって被害の損失を負わないと.売り手はその選択により、この順序または契約またはその結果責任なしの任意の部分をキャンセルする上記不測の事態のいずれかの出来事が発生した場合、権利を有する。</p>
+    <p><strong>4. 出荷</strong> - 購入者によってそうでない場合は、運送費の前払いが必要な貨物の手当の対象となるなどの出荷を要求しない限り、最安の得られる貨物料金で行われるすべての貨物エクスプレスを蘭の航空や航空貨物などのプレミアム レート サービスのため、追加のコストは購入者に請求されます。被保険者と郵便の料金送信小包郵便での出荷になります、保険に追加されます、別段ここ内 10% 以上あれば順序を超過又は未成年者の単位量で調整、売買価格順、正確な量の下で、売り手が、分割払いで配信する権利を留保場合があります。このようなすべての分割払いを別々 に請求され、後続の配信、いずれかの割賦の配達の遅れを考慮しなければならない移動の受け取りをその義務の購入者を取り除かないことがなく支払い期日のために支払ったしなければなりません。
+      5。 価格-出荷の価格に使用される総排出量を要求します。それ複数の送料が必要、すべての要求された出荷が 180 日の期間内である必要があります、特に明記しない限り、各要求された出荷が総排出量の 15% 以上で、ある必要があります。価格、売り手である作られたスケジュールに変更は影響しません。価格の引用は、すべての出荷スケジュールを受け入れる買い手に基づいています。場合は出荷がキャンセルまたは数量の減少、再価格と再請求は出荷実績数量に基づいた価格で発生します。任意の順序の最低料金は $50.00 になります。料金はボクシングの一切または国内キャリアに必要な木枠詰め業務します。特別なボクシングのコスト エクスポート ボクシング、荷車運送外国貨物と移転費用はそのような料金を示す場合を除き、購入者によって支払われるため別料金として請求書に追加されます、ここの料金に含まれています。</p>
+    <p><strong>5. 価格ージ</strong> - 出荷の価格に使用される総排出量を要求します。それ複数の送料が必要、すべての要求された出荷が 180 日の期間内である必要があります、特に明記しない限り、各要求された出荷が総排出量の 15% 以上で、ある必要があります。価格、売り手である作られたスケジュールに変更は影響しません。価格の引用は、すべての出荷スケジュールを受け入れる買い手に基づいています。場合は出荷がキャンセルまたは数量の減少、再価格と再請求は出荷実績数量に基づいた価格で発生します。任意の順序の最低料金は $50.00 になります。料金はボクシングの一切または国内キャリアに必要な木枠詰め業務します。特別なボクシングのコスト エクスポート ボクシング、荷車運送外国貨物と移転費用はそのような料金を示す場合を除き、購入者によって支払われるため別料金として請求書に追加されます、ここの料金に含まれています。</p>
+    <p><strong>6. ストレージ</strong> - 購入者のための出荷の遅延の場合、製品が売り手によってストレージに配置可能性がありますし、購入者は、すべての処理、保険料、保管料を納付しなければなりません。明記されていない限り、購入者は請求書の受領を速やかにすべての手数料を納付しなければならないし、製品販売業者によって最初に指定した条件に従ってストレージに配置を支払わなければなりません。</p>
+    <p><strong>7. 配信 & タイトル</strong> - 国内出荷の場合、一般的なキャリアまたは認可されたトラック運転手への商品発送は購入者への配信を構成するものと、その時点で購入者と損失のすべてのリスクを我々 に譲渡または輸送中の損傷は購入者が負担しなければなりません。アメリカ合衆国外のアンロードの最初の部分で製品が到着したとき、輸出貨物の場合購入者に配信場所を講ずる。メキシコとカナダへの出荷、配達は究極の荷受人の住所に到着です。タイトルの損失のリスクの所有権をして購入者に販売される製品が所持または管理する権利は製品への配達まで売主が負います。時間の方法または支払の場所かどうかの前に、または信用状で出荷後又はそれ以外の場合、購入者の契約、購入者、購入者、またはエージェント、および輸入や購入者が通関貨物に代わって製品のストレージ製品の偏析方法はありません制限で販売配信まで製品の法的および有益な所有者としての権利。任意の用語「船渡し」や「通関」などを使って、価格、タイトルおよび所有権を適用しなければなりません。それは明示的配信まで保険がただし、貨物への損傷の損失が発生した場合の配信まで製品の法的所有者と売主の利益を保護しなければならないを保持しない裸の法的所有権は販売者によって保持されるタイトルが、購入者を使用することに同意しなければならない速やかに売り手に通知、売主に代わって完了損益計算書クレームをファイルやにもかかわらず支払いがある保険を請求するために必要な書類配信前に行われました。</p>
+    <p><strong>8. します。 キャンセル</strong> - この順序は後解約の書面による通知しなければならない実際にによって受信されている売り手と購入者が材料と作業プロセスのカスタム オーダーと同様に、任意の出荷またはそのような期間の間に売り手によって提供される製品を受け入れる義務を負う配信または 10 10 日まで他の原因での遅延の購入によってキャンセル可能ななりません。特に明記しない限り、この順序は損失に対する損害賠償売り手が条件に売主の同意のみ購入の一部の障害なくキャンセルできます。</p>
+    <p><strong>9. 許容差</strong>-売り手によって提供された製品は、売り手と売り手のバリエーションの標準公差が公開サイズの範囲内であり。</p>
+    <p><strong>10. です。 請求</strong> - を放棄し、当該商品の到着後 5 5 日以内に書面で作られていない限り、購入者が発表した不良品、不足、遅延または出荷の配信またはその他の原因のための障害の請求とみなします。クレーム考慮されません変更、商品の汚損、または、任意の追加の操作を実行すると、時に、労働、リワーク、売主の事前承認書なし購入者、その他費用の交通機関の請求はできません。製品を満たすために失敗した場合、仕様書は販売に合意しました。出品者の当該許容範囲、対象となる購入者はそれらを返還しなければならないが届け出なければならない内で当該売主 5 5 日間、示す完全、その主張は、売り手は、そのオプションをサポートする特定しなければならないか帰国後不完全または不十分な素材の製品を交換または公平かつ迅速に問題を調整: いかなる状況下で販売しなければならない損害またはその他の損害賠償義務、損失または費用、使用、理由に関連して生じる直接的または間接的または任意の目的のための製品を使用することができません。売り手を保証しないか、またはインストールまたは販売された本製品の使用に関連してそれによって与えられる技術的な助言を保証します。この見積での同じは具体的に規定が、このようなケースでこのような保証または保証は限定として上記の提供、商品または任意の目的の製品の適合を保証または保証には行われません。</p>
+    <p><strong>11. 特許</strong> - すべての製品は製造または購入の特定の仕様や要件を満たすために販売人が販売しなければならない、購入者は補償に同意、保護、無害な売り手すべてのスーツや行動に対して、すべての判断、法令、コスト、米国または外国のパテントの実際か疑わしい侵害のための費用を保存します。購入者または同意すること売り手のリクエストは、購入者、購入者の費用を守るためこのような侵害を理由として売主に対してもたらされる可能性がありますそのような行動の防衛を支援します。</p>
+    <p><strong>12. 知的財産権</strong> - 売り手がすべての知的財産の所有権を保持し、独自のデータの開示、製品の販売に関連して購入。バイヤーは、製品の販売に関連して購入者に開示なりません。バイヤー既に一般に知られている限り、でも、このような知的財産権や他の人にデータを開示しなければなりません。この項では、独自のデータを意味すべての設計、エンジニア リングおよび技術情報 (おいしいかどうか) および売り手の企業秘密に関するその他の情報。売主の製造方法およびプロセス、トリートメント、化学組成、工場設備のレイアウト、ツーリング。さらに売り手がすべての権利、権原および利益は、任意およびすべてのアイデアや発明、改良、材料、copyrightable 材料などの所有権を保持する特に別段の記載がない限り、想像したり、製造、製品の販売に関連して行われるものとの関係の結果として販売。</p>
+    <p><strong>13. プロパティの売り手</strong> - 場合を除き、任意サンプル、供給、材料、設備、ツール、サイコロ、治具、治具、ゲージ、金型、デザイン、パターン、仕様、説明、本契約に基づき提供またはこれまでやこれから購入、家具または売り手によって作られた装置でなければならないと売り手の所有権と売り手はの損失のリスクを負担及び財産を除く通常の磨耗や損傷への損傷。本の購入者によって支払われる価格と逆側には、このようなのプロパティは表示、それが価格-そのようなプロパティは、購入者と購入者の使用を許可する知的財産ライセンス製品の生産販売者によって使用のための購入者によってそのようなプロパティのレンタルの利用に関連して料金をセットにしなければならないと述べた当事者によって認識します。、再販がない製品またはそのようなプロパティを持つとのような特性の購入のためのバイヤーによっての製造。</p>
+    <p><strong>14. 返される製品</strong> - 製品は受け付けられませんの帰りを売主に書面で承認しない限り、します。</p>
+    <p><strong>15. 変更</strong> - すべての追加費用 tot の図面、設計や仕様本製品に適用される購入者の変化により売り手または出荷、包装や家具に加えて、ここいや製品と同様に、売り手によって承認されている配達の場所のメソッド指定しなければならないする購入価格に追加、購入者によって支払われます。</p>
+    <p><strong>16. 売り手の所持右</strong> - 売り手は権利を有する, すべての他の人に加えてそれは信用上の理由や購入者のデフォルトまたはデフォルト、出荷を保留するために、いつでも持って可能性があります。全部または一部停止製品輸送時における前に、または出産後同じ、リダイレクト、一般に再受験する他の手続きのすべてをインベントリします。購入者が認識し、すべての製品だから、源泉徴収、輸送中に停止または奪還、出産後を承知の上、購入者は完全に信用を与えられて従って提供される販売者の絶対的な物となります。</p>
+    <p><strong>17. クレジットの失効</strong> - 売り手はいつでも理由判断かつ十分なためか、または、他のときにすべての製品の支払いに購入者の失敗のための売り手によって購入者に拡張任意のクレジットを失効する権利を有します。このようなイベントに事前にまたは配信のすべての後続の出荷を納付しなければなりません。</p>
+    <p><strong>18. 予約の権利</strong> - 売主が所有する既存のツールを変更する購入者による支払いまたは他の「部分的なツーリング」料金または類似費用ないに帰属する権利またはタイトル購入者。別段の記載がない限り、販売しなければならない無制限に権利および権限を生成、使用、または他の人に同じ製品を販売します。</p>
+    <p><strong>19. します。 受注</strong> - 売り手は任意の順序を拒否する権利を有します。注文とみなす受け入れ、バインディング契約形成販売者によって書面で購入者の注文が受け入れられた場合または順序を寄棟、サプライヤーの売り手の購入またはその他のリソースの順序の達成へのコミットメント、どちらか早い方。</p>
+    <p><strong>20. 該当する法律</strong> – この見積を構築しカリフォルニア州の法律に従って管理しなければなりません。</p>
+    <p><strong>21. 取立手数料</strong> - 購入者対象は、このプロセスの標準的なコレクションの費用によって生成されたコレクション手数料は売り手に支払うべき総額の 33% のために責任を負うことに同意するものと、未払いの請求書、コレクションに送信されるイベントです。</P>
+  </DIV>
+  </SECTION>
+  <FOOTER class="footer">
+    <div class="footer-top">
+      <div class="clears footer-nav">
+        <DIV class="fl">
+          <UL>
+            <LI><A href="Profile.html">会社紹介</A></LI>
+            <LI><A href="all-products.html">製品紹介</A></LI>
+            <LI><A 
+  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
+          </UL>
+        </DIV>
+        <div class="fr"></div>
+      </div>
+      <div class="clears ac">
+        <p>大阪府東大阪市長田東3-2-43 ｜ TEL: 06-6748-3660(代)｜FAX: 06-6747-3670｜<a href="mailto:info@a-stech.com">info@a-stech.com</a></p>
+      </div>
+    </div>
+    <DIV class="footer-bottom clears">
+      <DIV class="fl">
+        <P>© 2017 A-S TECH</P>
+      </DIV>
+      <DIV class="fr">
+        <UL>
+          <LI><A href="Terms.html">TERMS</A></LI>
+          <LI><A href="privacy.html">PRIVACY 
+            POLICY</A></LI>
+        </UL>
+      </DIV>
+    </DIV>
+  </FOOTER>
+</DIV>
+</BODY>
+</HTML>

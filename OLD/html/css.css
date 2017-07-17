@@ -1,0 +1,28 @@
+table {
+	font-size: 12px;
+	line-height: 17px;
+}
+.c_red {
+	color: #FF0000;
+}
+.c_yerr {
+	color: #CACA00;
+}
+.c_blue {
+	color: #0033FF;
+}
+.c_gree {
+	color: #009900;
+}
+.c_whit {
+	color: #000000;
+}
+.c_oran {
+	color: #FF9900;
+}
+.b_brow {
+	background-color: #F2F2F2;
+}
+.color_red {
+	color: #FF0000;
+}
