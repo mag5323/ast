@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML><!DOCTYPE html PUBLIC "" "">
+﻿<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <META content="IE=11.0000" http-equiv="X-UA-Compatible">
@@ -18,10 +18,10 @@ var number_format_th = '';
 var number_format_point = '2';
 var store_language = 'en';
 var xcart_web_dir = "";
-var images_dir = "/skin/common_files/images";
+var images_dir = "skin/common_files/images";
 var lbl_no_items_have_been_selected = 'No items have been selected';
 var current_area = 'C';
-var skin_dir = '/skin/common_files';
+var skin_dir = 'skin/common_files';
 var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!";
 var lbl_field_required = "Field is required";
 var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid.";
@@ -39,7 +39,7 @@ var lbl_blockui_default_message = "Please wait...";
 var current_location = 'http://www.aopled.com';
 //]]>
 </SCRIPT>
-<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/common.js" type="text/javascript"></SCRIPT>
 <SCRIPT type="text/javascript">
 //<![CDATA[
 var lbl_error = 'Error';
@@ -52,17 +52,19 @@ topMessageDelay['w'] = 60*1000;
 topMessageDelay['e'] = 0*1000;
 //]]>
 </SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
-<LINK href="images/jquery.cluetip.css" rel="stylesheet" 
+<SCRIPT src="skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-ui.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/bootstrap.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css" rel="stylesheet"
 type="text/css">
-<SCRIPT src="/skin/common_files/lib/jqueryui/jquery-ui.custom.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/jquery_ui_fix.js" type="text/javascript"></SCRIPT>
-<LINK href="images/jquery.ui.theme.css" rel="stylesheet" 
+<SCRIPT src="skin/common_files/lib/jqueryui/jquery-ui.custom.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/js/jquery_ui_fix.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.ui.theme.css" rel="stylesheet"
 type="text/css">
-<LINK href="images/jquery_ui.css" 
+<LINK href="images/jquery_ui.css"
 rel="stylesheet" type="text/css">
 <SCRIPT type="text/javascript">
 //<![CDATA[
@@ -78,57 +80,48 @@ $(document).ready( function() {
 
 //]]>
 </SCRIPT>
-<SCRIPT src="/skin/common_files/js/ajax.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/top_message.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/popup_open.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery.blockUI.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery.blockUI.defaults.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/sticky.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/js/ajax.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/js/top_message.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/js/popup_open.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery.blockUI.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery.blockUI.defaults.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/common_files/js/sticky.js" type="text/javascript"></SCRIPT>
 <SCRIPT type="text/javascript">
 //<![CDATA[
-  var number_format_dec = '.'; var number_format_th = ''; var number_format_point = '2'; var store_language = 'en'; var xcart_web_dir = ""; var images_dir = "/skin/common_files/images"; var alt_images_dir = "/skin/aop/images"; var lbl_no_items_have_been_selected = 'No items have been selected'; var current_area = 'C';  var currency_format = "$x";  var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}."; var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}."; var txt_out_of_stock = "Out of stock"; var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}."; var is_limit = true; var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!"; var lbl_field_required = "Field is required"; var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid."; var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?"; var lbl_blockui_default_message = "Please wait..."; var lbl_error = 'Error'; var lbl_warning = 'Warning'; var lbl_information = 'Information'; var lbl_ok = 'OK'; var lbl_yes = 'Yes'; var lbl_no = 'No'; var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.'; var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';  var txt_email_invalid = "Email address is invalid! Please correct"; var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");  var is_admin_editor = false; var is_responsive_skin = "N"; var  topMessageDelay = []; topMessageDelay['i'] = 10*1000; topMessageDelay['w'] = 60*1000; topMessageDelay['e'] = 0*1000; 
+  var number_format_dec = '.'; var number_format_th = ''; var number_format_point = '2'; var store_language = 'en'; var xcart_web_dir = ""; var images_dir = "skin/common_files/images"; var alt_images_dir = "skin/aop/images"; var lbl_no_items_have_been_selected = 'No items have been selected'; var current_area = 'C';  var currency_format = "$x";  var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}."; var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}."; var txt_out_of_stock = "Out of stock"; var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}."; var is_limit = true; var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!"; var lbl_field_required = "Field is required"; var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid."; var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?"; var lbl_blockui_default_message = "Please wait..."; var lbl_error = 'Error'; var lbl_warning = 'Warning'; var lbl_information = 'Information'; var lbl_ok = 'OK'; var lbl_yes = 'Yes'; var lbl_no = 'No'; var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.'; var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';  var txt_email_invalid = "Email address is invalid! Please correct"; var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");  var is_admin_editor = false; var is_responsive_skin = "N"; var  topMessageDelay = []; topMessageDelay['i'] = 10*1000; topMessageDelay['w'] = 60*1000; topMessageDelay['e'] = 0*1000;
 //]]>
 </SCRIPT>
-<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/modules/Banner_System/js/jquery.cycle.all.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
 <SCRIPT type="text/javascript">
 //<![CDATA[
-    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg))) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?'; 
+    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg))) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?';
 //]]>
 </SCRIPT>
-<SCRIPT src="/skin/common_files/js/check_quantity.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/bootstrap/js/jquery.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/bootstrap/js/bootstrap.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/_includes/js/swiper.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/_includes/js/main-jquery.js" type="text/javascript"></SCRIPT>
-<LINK href="images/jquery.cluetip.css" 
+<SCRIPT src="skin/common_files/js/check_quantity.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="skin/aop/_includes/js/swiper.min.js" type="text/javascript"></SCRIPT>
+<LINK href="images/jquery.cluetip.css"
 rel="stylesheet" type="text/css">
 <STYLE type="text/css">
 <!--
 -->
 </STYLE>
-<LINK href="/skin/aop/css/altskin.css" rel="stylesheet" type="text/css">
+<LINK href="skin/aop/css/altskin.css" rel="stylesheet" type="text/css">
 <STYLE type="text/css">
 <!--
 -->
 </STYLE>
-<LINK href="images/bootstrap.css" rel="stylesheet" 
+<LINK href="images/bootstrap.css" rel="stylesheet"
 type="text/css">
-<LINK href="images/xcart.css" 
+<LINK href="images/xcart.css"
 rel="stylesheet" type="text/css">
-<LINK href="images/font.css" 
+<LINK href="images/font.css"
 rel="stylesheet" type="text/css">
-<LINK href="images/swiper.min.css" 
+<LINK href="images/swiper.min.css"
 rel="stylesheet" type="text/css">
-<LINK href="images/global.css" 
+<LINK href="images/global.css"
 rel="stylesheet" type="text/css">
-<LINK href="http://www.aopled.com/favicon.ico" 
+<LINK href="http://www.aopled.com/favicon.ico"
 rel="shortcut icon" type="image/png">
-<LINK href="http://www.aopled.com/home.php" 
+<LINK href="http://www.aopled.com/home.php"
 rel="canonical">
 <style type="text/css">
 body, td, th {
@@ -158,7 +151,7 @@ body, td, th {
               <DD><A href="all-products.html">LED ディスプレイモジュール</A></DD>
             </DL>
           </LI>
-          <LI><A 
+          <LI><A
   href="mailto:info@a-stech.com">お問い合わせ</A></LI>
         </UL>
       </DIV>
@@ -167,10 +160,10 @@ body, td, th {
   <STYLE>
      .menu-details .col-md-1{ min-height:227px;}
     </STYLE>
-  <DIV class="home-banner">
+<!--  <DIV class="home-banner">
     <DIV class="swiper-container">
       <DIV class="swiper-wrapper">
-        <DIV class="swiper-slide"><A href="Profile.html"><IMG 
+        <DIV class="swiper-slide"><A href="Profile.html"><IMG
 src="images/MAIN_PAGE.png"> </A> </DIV>
         <DIV class="swiper-slide"></DIV>
         <DIV class="swiper-slide"></DIV>
@@ -178,6 +171,39 @@ src="images/MAIN_PAGE.png"> </A> </DIV>
       <DIV class="swiper-pagination"></DIV>
     </DIV>
   </DIV>
+-->
+
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/MAIN_PAGE.png" alt="1">
+    </div>
+    <div class="item">
+      <img src="images/AOP_LED_UVC_LED.jpg" alt="2">
+    </div>
+    <div class="item">
+      <img src="images/AOL_LED_Super_Thin_Capacitive_Touch_SMD_Display.jpg" alt="3">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  <script type="text/javascript">
+    $(function() {
+        $('.carousel').carousel();
+    });
+  </script>
+
   <FOOTER class="footer">
     <div class="footer-top">
       <div class="clears footer-nav">
@@ -185,7 +211,7 @@ src="images/MAIN_PAGE.png"> </A> </DIV>
           <UL>
             <LI><A href="Profile.html">会社紹介</A></LI>
             <LI><A href="all-products.html">製品紹介</A></LI>
-            <LI><A 
+            <LI><A
   href="mailto:info@a-stech.com">お問い合わせ</A></LI>
           </UL>
         </DIV>
@@ -202,7 +228,7 @@ src="images/MAIN_PAGE.png"> </A> </DIV>
       <DIV class="fr">
         <UL>
           <LI>TERMS</LI>
-          <LI><A href="privacy.html">PRIVACY 
+          <LI><A href="privacy.html">PRIVACY
             POLICY</A></LI>
         </UL>
       </DIV>
