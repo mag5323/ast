@@ -158,19 +158,19 @@ textarea {
 	overflow: auto; vertical-align: top;
 }
 body {
-	font: 12px/1.5 "Hind-Regular", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+	font: 12px/1.5 "Sawarabi Gothic", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
 }
 button {
-	font: 12px/1.5 "Hind-Regular", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+	font: 12px/1.5 "Sawarabi Gothic", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
 }
 input {
-	font: 12px/1.5 "Hind-Regular", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+	font: 12px/1.5 "Sawarabi Gothic", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
 }
 select {
-	font: 12px/1.5 "Hind-Regular", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+	font: 12px/1.5 "Sawarabi Gothic", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
 }
 textarea {
-	font: 12px/1.5 "Hind-Regular", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+	font: 12px/1.5 "Sawarabi Gothic", Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
 }
 select {
 	-webkit-appearance: menulist-button;
@@ -302,7 +302,7 @@ body {
 	margin: 0px auto; width: 1300px; background-color: rgb(255, 255, 255);
 }
 .form-control {
-	font-family: "Hind-Light";
+	font-family: "Sawarabi Gothic";
 }
 #wp-header {
 
@@ -380,7 +380,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.95);
 }
 .banner-text h2 {
-	padding: 20px; color: rgb(51, 51, 51); font-family: "Hind-Light"; font-size: 40px;
+	padding: 20px; color: rgb(51, 51, 51); font-family: "Sawarabi Gothic"; font-size: 40px;
 }
 .banner-text p {
 	padding: 0px 20px 20px; color: rgb(102, 102, 102); line-height: 26px; font-size: 15px;
@@ -395,7 +395,7 @@ a.btn-primary {
 	padding: 65px 0px;
 }
 .featured h2 {
-	padding-bottom: 40px; font-family: "Hind-Light"; font-size: 40px; font-weight: 400;
+	padding-bottom: 40px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 400;
 }
 .featured-row {
 	padding-left: 25px;
@@ -422,7 +422,7 @@ a.btn-primary {
 	width: 50%;
 }
 .mini-banner-box h3 {
-	line-height: 40px; font-family: "Hind-Light"; font-size: 36px; font-weight: 400;
+	line-height: 40px; font-family: "Sawarabi Gothic"; font-size: 36px; font-weight: 400;
 }
 .mini-banner-box p {
 	line-height: 24px; padding-top: 15px; font-size: 15px;
@@ -431,7 +431,7 @@ a.btn-primary {
 	padding: 65px 0px;
 }
 .lastest-news h2 {
-	padding-bottom: 40px; font-family: "Hind-Light"; font-size: 40px; font-weight: 400;
+	padding-bottom: 40px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 400;
 }
 .lastest-news {
 
@@ -440,13 +440,13 @@ a.btn-primary {
 	position: relative;
 }
 .lastest-news-box p {
-	padding: 0px 24px; left: 0px; top: 0px; text-align: left; right: 0px; bottom: 0px; color: rgb(255, 255, 255); font-family: "Hind-Light"; font-size: 15px; position: absolute;
+	padding: 0px 24px; left: 0px; top: 0px; text-align: left; right: 0px; bottom: 0px; color: rgb(255, 255, 255); font-family: "Sawarabi Gothic"; font-size: 15px; position: absolute;
 }
 .lastest-news-box p strong {
-	line-height: 36px; padding-top: 20px; padding-bottom: 10px; font-family: "Hind-Regular"; font-size: 24px; font-weight: 300; display: block;
+	line-height: 36px; padding-top: 20px; padding-bottom: 10px; font-family: "Sawarabi Gothic"; font-size: 24px; font-weight: 300; display: block;
 }
 .lastest-news-box p span {
-	font-family: "Hind-Light"; font-size: 15px;
+	font-family: "Sawarabi Gothic"; font-size: 15px;
 }
 .lastest-news-box a {
 	display: block; position: relative;
@@ -470,7 +470,7 @@ a.btn-primary {
 	padding: 30px 40px;
 }
 .product-top-nav li {
-	font-family: "Hind-Light"; font-size: 15px; display: inline-block;
+	font-family: "Sawarabi Gothic"; font-size: 15px; display: inline-block;
 }
 .product-top-nav li a {
 	color: rgb(102, 102, 102);
@@ -479,7 +479,7 @@ a.btn-primary {
 	padding: 40px 60px;
 }
 .product-detail-main h1 {
-	padding-bottom: 30px; font-family: "Hind-Light"; font-size: 40px; font-weight: 300;
+	padding-bottom: 30px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 300;
 }
 .product-detail-main {
 
@@ -551,13 +551,13 @@ a.btn-primary {
 
 }
 .recently-viewed h1 {
-	margin: 0px 40px; padding: 15px 0px; font-family: "Hind-Light"; font-size: 40px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+	margin: 0px 40px; padding: 15px 0px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
 }
 .detail-text {
 	border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
 }
 .detail-text p {
-	padding: 15px 0px; font-family: "Hind-Light"; font-size: 15px;
+	padding: 15px 0px; font-family: "Sawarabi Gothic"; font-size: 15px;
 }
 .detail-text .fl {
 	width: 520px;
@@ -599,22 +599,22 @@ a.btn-primary {
 	padding-left: 100px;
 }
 .contact-box p {
-	font-family: "Hind-Light"; font-size: 15px;
+	font-family: "Sawarabi Gothic"; font-size: 15px;
 }
 .contact-bottom {
 	padding-top: 110px; padding-bottom: 70px;
 }
 .contact-bottom h3 {
-	text-transform: capitalize; font-family: "Hind-Light"; font-size: 30px; font-weight: 300;
+	text-transform: capitalize; font-family: "Sawarabi Gothic"; font-size: 30px; font-weight: 300;
 }
 .contact-bottom p {
-	margin: 0px auto; padding: 10px 0px; width: 380px; line-height: 24px; font-family: "Hind-Light"; font-size: 15px;
+	margin: 0px auto; padding: 10px 0px; width: 380px; line-height: 24px; font-family: "Sawarabi Gothic"; font-size: 15px;
 }
 .contact-bottom .form-control {
 	border-radius: 0px; min-height: 40px; box-shadow: none;
 }
 .contact-bottom label {
-	font-family: "Hind-Light"; font-size: 15px; font-weight: 300;
+	font-family: "Sawarabi Gothic"; font-size: 15px; font-weight: 300;
 }
 .contact-form-box {
 	margin: 0px auto; width: 760px;
@@ -632,7 +632,7 @@ a.btn-primary {
 	border-radius: 0px; width: 200px; display: inline-block;
 }
 .sub-category-top p {
-	font-family: "Hind-Light"; font-size: 15px;
+	font-family: "Sawarabi Gothic"; font-size: 15px;
 }
 .sub-category-top p span {
 	padding-right: 8px; display: inline-block;
@@ -644,10 +644,10 @@ a.btn-primary {
 	width: 100%;
 }
 .sub-category th {
-	font-family: "Hind-Light"; font-size: 16px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+	font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
 }
 .sub-category td {
-	font-family: "Hind-Light"; font-size: 16px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+	font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 300; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
 }
 .sub-category th {
 	padding: 5px 0px;
@@ -665,16 +665,16 @@ a.btn-primary {
 	padding-right: 20px;
 }
 .our-history h2 {
-	padding-bottom: 30px; font-family: "Hind-Light"; font-size: 40px; font-weight: 300;
+	padding-bottom: 30px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 300;
 }
 .our-history p {
-	line-height: 24px; font-family: "Hind-Light"; font-size: 15px; font-weight: 300;
+	line-height: 24px; font-family: "Sawarabi Gothic"; font-size: 15px; font-weight: 300;
 }
 .profile-01 {
 	background-position: center; padding: 70px 0px; position: relative; background-image: url("../../_images/Profile-01.jpg"); background-repeat: no-repeat; background-size: cover;
 }
 .profile-01 h2 {
-	margin: 0px auto; width: 1100px; color: rgb(255, 255, 255); line-height: 48px; font-family: "Hind-Light"; font-size: 30px; font-weight: 300;
+	margin: 0px auto; width: 1100px; color: rgb(255, 255, 255); line-height: 48px; font-family: "Sawarabi Gothic"; font-size: 30px; font-weight: 300;
 }
 .profile-01::after {
 	background: url("../../_images/arrow-img.png"); left: 50%; width: 65px; height: 39px; bottom: -38px; margin-left: -32px; display: block; position: absolute; content: "";
@@ -686,10 +686,10 @@ a.btn-primary {
 	background-size: cover;
 }
 .profile-main .table-cell h1 {
-	line-height: 24px; padding-bottom: 10px; font-family: "Hind-Light"; font-size: 36px; font-weight: 300;
+	line-height: 24px; padding-bottom: 10px; font-family: "Sawarabi Gothic"; font-size: 36px; font-weight: 300;
 }
 .profile-main .table-cell p {
-	font-family: "Hind-Light"; font-size: 15px; font-weight: 300;
+	font-family: "Sawarabi Gothic"; font-size: 15px; font-weight: 300;
 }
 .profile-main :nth-child(1).div-table :nth-child(1).table-cell {
 	background-image: url("../../_images/Profile-001.jpg");
@@ -722,19 +722,19 @@ a.btn-primary {
 	background: url("../../_images/Profile-005.jpg") no-repeat center / cover; padding: 65px 180px 50px 160px;
 }
 .profile-mini-banner-05 h1 {
-	font-family: "Hind-Light"; font-size: 36px; font-weight: 300;
+	font-family: "Sawarabi Gothic"; font-size: 36px; font-weight: 300;
 }
 .profile-mini-banner-05 p {
-	line-height: 24px; font-family: "Hind-Light"; font-size: 16px; font-weight: 300;
+	line-height: 24px; font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 300;
 }
 .profile-bottom {
 	background: url("../../_images/Profile-bottom.jpg") no-repeat center / cover; padding: 60px 160px; color: rgb(255, 255, 255);
 }
 .profile-bottom h1 {
-	font-family: "Hind-Light"; font-size: 36px; font-weight: 300;
+	font-family: "Sawarabi Gothic"; font-size: 36px; font-weight: 300;
 }
 .profile-bottom p {
-	line-height: 24px; font-family: "Hind-Light"; font-size: 16px; font-weight: 300;
+	line-height: 24px; font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 300;
 }
 .profile-bottom h3 {
 	text-transform: uppercase; padding-top: 30px; padding-bottom: 20px; font-size: 15px;
@@ -851,13 +851,13 @@ a.btn-primary {
 	margin: 0px auto; padding: 20px 15px; max-width: 1180px;
 }
 .other-main h1 {
-	padding: 40px 0px; font-family: "Hind-Light"; font-size: 40px; font-weight: 300;
+	padding: 40px 0px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 300;
 }
 .other-main p {
-	padding-bottom: 5px; font-family: "Hind-Light"; font-size: 16px; font-weight: 300;
+	padding-bottom: 5px; font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 300;
 }
 .other-main p strong {
-	text-transform: uppercase; font-family: "Hind-Regular"; font-weight: 400;
+	text-transform: uppercase; font-family: "Sawarabi Gothic"; font-weight: 400;
 }
 .other-main p span {
 	padding-left: 30px; display: inline-block;
@@ -1043,7 +1043,7 @@ a.btn-primary {
 	padding: 23px 40px;
 }
 .footer-top .ac {
-	padding: 20px; font-family: "Hind-Light"; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+	padding: 20px; font-family: "Sawarabi Gothic"; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
 }
 .footer-top form {
 	position: relative;
@@ -1061,7 +1061,7 @@ a.btn-primary {
 	font-weight: 300; position: absolute;
 }
 .footer-bottom {
-	padding: 20px 40px; color: rgb(255, 255, 255); font-family: "Hind-Light"; font-size: 14px; background-color: rgb(51, 51, 51);
+	padding: 20px 40px; color: rgb(255, 255, 255); font-family: "Sawarabi Gothic"; font-size: 14px; background-color: rgb(51, 51, 51);
 }
 .footer-bottom a {
 	color: rgb(255, 255, 255); text-transform: uppercase; font-size: 14px;
@@ -1076,7 +1076,7 @@ a.btn-primary {
 	left: 0px; top: 0px; right: 0px; bottom: 0px; display: none; position: fixed; z-index: 9999; background-color: rgba(255, 255, 255, 0.98);
 }
 .pop-up-content {
-	margin: 0px auto; width: 100%; font-family: "Hind-Light"; max-width: 620px;
+	margin: 0px auto; width: 100%; font-family: "Sawarabi Gothic"; max-width: 620px;
 }
 .pop-up-content h2 {
 	padding-bottom: 15px; font-size: 30px; font-weight: 400;
@@ -1085,7 +1085,7 @@ a.btn-primary {
 	padding-bottom: 20px; font-size: 17px;
 }
 .pop-up-content label {
-	font-family: "Hind-Light"; font-size: 16px; font-weight: 400;
+	font-family: "Sawarabi Gothic"; font-size: 16px; font-weight: 400;
 }
 .pop-up-content .btn {
 
