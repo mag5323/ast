@@ -344,13 +344,13 @@ body {
 	max-width: 100%;
 }
 #nav {
-
+    height: 150px;
 }
 #nav > li {
-	padding-left: 35px; display: inline-block;
+	padding-left: 35px; display: inline-block; line-height: 150px;
 }
 #nav > li > a {
-	padding: 13px 30px 32px; text-transform: uppercase; position: relative;
+	padding: 0px 30px; text-transform: uppercase; position: relative;
 }
 #nav dl {
 	transition:0.3s; padding-top: 15px; padding-bottom: 15px; border-top-color: rgb(97, 159, 205); border-top-width: 1px; border-top-style: solid; position: absolute; z-index: -1; opacity: 0; background-color: rgb(29, 117, 183);
