@@ -393,6 +393,11 @@ body {
 #nav dl a {
 	text-transform: uppercase; padding-right: 30px; padding-left: 30px; font-size: 15px; white-space: nowrap;
 }
+.contact-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 #wp-content {
 
 }
