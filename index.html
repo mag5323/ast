@@ -1,10 +1,9 @@
 ﻿<!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<META content="IE=11.0000" http-equiv="X-UA-Compatible">
-<TITLE>AS-TECH Welcome</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-<META http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <META http-equiv="Content-Script-Type" content="text/javascript">
 <META http-equiv="Content-Style-Type" content="text/css">
 <META http-equiv="Content-Language" content="en">
@@ -12,6 +11,7 @@
 <LINK href="favicon.ico"
 rel="shortcut icon" type="image/png">
 <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<TITLE>AS-TECH Welcome</TITLE>
 <SCRIPT type="text/javascript">
 //<![CDATA[
 var number_format_dec = '.';
@@ -118,33 +118,43 @@ body, td, th {
 </style>
 </HEAD>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
-<DIV class="container">
-  <HEADER id="header">
-    <DIV class="header-nav clears"><a href="index.html"><img src="images/astech_transparent.png" width="150" height="150"></a>
-      <DIV class="fr">
-        <UL id="nav">
-          <LI><A href="Profile.html">会社紹介</A></LI>
-          <LI><A href="all-products.html">製品紹介</A>
-            <DL>
-              <DD><A href="all-products.html">LED Lamps</A></DD>
-              <DD><A href="all-products.html">SMD LED</A></DD>
-              <DD><A href="all-products.html">ハイパワーLED</A></DD>
-              <DD><A href="all-products.html">IR LED</A></DD>
-              <DD><A href="all-products.html">LED 電球</A></DD>
-              <DD><A href="all-products.html">LED 照明</A></DD>
-              <DD><A href="all-products.html">パワーサプライ</A></DD>
-              <DD><A href="all-products.html">PCB Assembly</A></DD>
-              <DD><A href="all-products.html">OEM サービス</A></DD>
-              <DD><A href="all-products.html">ODM Design</A></DD>
-              <DD><A href="all-products.html">LED ディスプレイモジュール</A></DD>
-            </DL>
-          </LI>
-          <LI><A
-  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
-        </UL>
-      </DIV>
-    </DIV>
-  </HEADER>
+
+<DIV class="container-fluid">
+    <nav id="header" class="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/astech_transparent.png" width="150" height="150"></a>
+        </div>
+        <DIV id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <LI><A href="Profile.html">会社紹介</A></LI>
+                <LI class="dropdown">
+                    <A href="all-products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        製品紹介<span class="caret"></span>
+                    </A>
+                    <ul id="dropdown-products" class="dropdown-menu">
+                        <li><a href="all-products.html">LED Lamps</a></li>
+                        <li><a href="all-products.html">SMD LED</a></li>
+                        <li><a href="all-products.html">ハイパワーLED</a></li>
+                        <li><a href="all-products.html">IR LED</a></li>
+                        <li><a href="all-products.html">LED 電球</a></li>
+                        <li><a href="all-products.html">LED 照明</a></li>
+                        <li><a href="all-products.html">パワーサプライ</a></li>
+                        <li><a href="all-products.html">PCB Assembly</a></li>
+                        <li><a href="all-products.html">OEM サービス</a></li>
+                        <li><a href="all-products.html">ODM Design</a></li>
+                        <li><a href="all-products.html">LED ディスプレイモジュール</a></li>
+                    </ul>
+                </LI>
+                <LI><a href="mailto:info@a-stech.com">お問い合わせ</a></LI>
+            </ul>
+        </DIV>
+    </nav>
   <STYLE>
      .menu-details .col-md-1{ min-height:227px;}
     </STYLE>

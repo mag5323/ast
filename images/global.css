@@ -308,10 +308,14 @@ body {
 
 }
 #header {
-	color: rgb(255, 255, 255); background-color: rgb(29, 117, 183);
+    color: rgb(255, 255, 255); background-color: rgb(29, 117, 183);
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 #header a {
 	color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .header-top {
 	padding: 22px 40px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
@@ -343,8 +347,33 @@ body {
 #logo img {
 	max-width: 100%;
 }
+.navbar-nav > li > .dropdown-menu,
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgb(29, 117, 183);
+}
+.dropdown-menu > li > a:hover {
+    background-color: rgb(29, 117, 183);
+    text-decoration: underline;
+}
+.navbar-nav > li > a:hover {
+    text-decoration: underline;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: rgb(29, 117, 183);
+}
 #nav {
-    height: 150px;
+    height: 100px;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 1300px;
+}
+.navbar-toggle {
+    height: 84px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 #nav > li {
 	padding-left: 35px; display: inline-block; line-height: 150px;
