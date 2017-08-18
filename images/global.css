@@ -435,6 +435,9 @@ a.btn-primary {
 .featured h2 {
 	padding-bottom: 40px; font-family: "Sawarabi Gothic"; font-size: 40px; font-weight: 400;
 }
+.featured .list-group a.list-group-item {
+    font-size: 16px;
+}
 .featured-row {
 	padding-left: 25px;
 }
