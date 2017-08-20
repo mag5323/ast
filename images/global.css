@@ -1135,4 +1135,9 @@ a.btn-grey {
     .profile-mini-banner-05 {
         padding: 40px 100px;
     }
+    .navbar-brand img {
+        max-width: 250px;
+        height: auto;
+        margin-top: 0;
+    }
 }
