@@ -8,15 +8,9 @@
 <META http-equiv="Content-Style-Type" content="text/css">
 <META http-equiv="Content-Language" content="en">
 <META name="robots" content="noindex, nofollow">
-<LINK href="favicon.ico"
-rel="shortcut icon" type="image/png">
+<LINK href="favicon.ico" rel="shortcut icon" type="image/png">
 <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
 <TITLE>AS-TECH Welcome</TITLE>
-<SCRIPT src="skin/common_files/common.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery-ui.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/bootstrap.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
 <LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery.ui.theme.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
@@ -28,16 +22,19 @@ rel="shortcut icon" type="image/png">
 <LINK href="images/global.css" rel="stylesheet" type="text/css">
 <LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
 <LINK href="http://www.aopled.com/home.php" rel="canonical">
-<style type="text/css">
+<style>
 body, td, th {
 	font-family: Sawarabi Gothi, Arial, Helvetica, sans-serif;
+}
+.menu-details .col-md-1 {
+    min-height:227px;
 }
 </style>
 </HEAD>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
-<DIV class="container-fluid">
-    <nav id="header" class="navbar">
+<DIV class="container-fluid" ng-app="ui.bootstrap.app">
+    <nav id="header" class="navbar" ng-controller="ContactCtrl">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -59,13 +56,73 @@ body, td, th {
                         <li><a href="all-products.html">SMD LED</a></li>
                     </ul>
                 </LI>
-                <LI><a href="mailto:info@a-stech.com">お問い合わせ</a></LI>
+                <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
             </ul>
         </DIV>
     </nav>
-  <STYLE>
-     .menu-details .col-md-1{ min-height:227px;}
-    </STYLE>
+
+    <script type="text/ng-template" id="contactModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">Contact Us</h3>
+        </div>
+        <form name="contact-form" ng-submit="submit()">
+            <div class="modal-body" id="modal-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" ng-model="contact.first_name" required="required" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="lastname" ng-model="contact.last_name" required="required" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="job_title">Job Title</label>
+                            <input type="text" class="form-control" name="job_title" ng-model="contact.job_title" id="job_title"/ >
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control" id="company" name="company" ng-model="contact.company" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" ng-model="contact.email" required="required" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="phone">Telephone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" ng-model="contact.phone" required="required"  />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="comment">Questions or Comments</label>
+                            <textarea class="form-control" id="comment" name="comment" rows="6" ng-model="contact.comment" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+        </form>
+    </script>
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -90,13 +147,6 @@ body, td, th {
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-  <script type="text/javascript">
-    $(function() {
-        $('.carousel').carousel();
-    });
-  </script>
-
   <FOOTER class="footer">
     <div class="footer-top">
       <div class="clears ac">
@@ -117,5 +167,14 @@ body, td, th {
     </DIV>
   </FOOTER>
 </DIV>
+<SCRIPT src="skin/common_files/common.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/bootstrap.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery_cookie.js"></SCRIPT>
+<script src="js/ui-bootstrap-custom-build/angular.min.js"></script>
+<script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
+<script src="js/ui-bootstrap-contact.js"></script>
+<script src="images/app.js"></script>
 </BODY>
 </HTML>
