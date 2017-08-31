@@ -1,159 +1,127 @@
-﻿<!DOCTYPE HTML><!DOCTYPE html PUBLIC "" "">
+﻿<!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<META content="IE=11.0000" http-equiv="X-UA-Compatible">
-<TITLE>AS-TECH Walcome :: Privacy</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <META http-equiv="Content-Script-Type" content="text/javascript">
 <META http-equiv="Content-Style-Type" content="text/css">
 <META http-equiv="Content-Language" content="en">
 <META name="robots" content="noindex, nofollow">
-<LINK href="favicon.ico" 
-rel="shortcut icon" type="image/png">
-<SCRIPT type="text/javascript">
-//<![CDATA[
-var number_format_dec = '.';
-var number_format_th = '';
-var number_format_point = '2';
-var store_language = 'en';
-var xcart_web_dir = "";
-var images_dir = "/skin/common_files/images";
-var lbl_no_items_have_been_selected = 'No items have been selected';
-var current_area = 'C';
-var skin_dir = '/skin/common_files';
-var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!";
-var lbl_field_required = "Field is required";
-var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid.";
-var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?";
-var txt_email_invalid = "Email address is invalid! Please correct";
-var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");
-var lbl_error = 'Error';
-var lbl_warning = 'Warning';
-var lbl_ok = 'OK';
-var lbl_yes = 'Yes';
-var lbl_no = 'No';
-var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';
-var is_admin_editor = false;
-var lbl_blockui_default_message = "Please wait...";
-var current_location = 'http://www.aopled.com';
-//]]>
-</SCRIPT>
-<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
-<SCRIPT type="text/javascript">
-//<![CDATA[
-var lbl_error = 'Error';
-var lbl_warning = 'Warning';
-var lbl_information = 'Information';
-var lbl_go_to_last_edit_section = 'Go to the recent section';
-var topMessageDelay = [];
-topMessageDelay['i'] = 10*1000;
-topMessageDelay['w'] = 60*1000;
-topMessageDelay['e'] = 0*1000;
-//]]>
-</SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
+<LINK href="favicon.ico" rel="shortcut icon" type="image/png">
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<TITLE>AS-TECH Walcome :: Privacy</TITLE>
 <LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
-<SCRIPT src="/skin/common_files/lib/jqueryui/jquery-ui.custom.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/jquery_ui_fix.js" type="text/javascript"></SCRIPT>
-<LINK href="images/jquery.ui.theme.css" rel="stylesheet" 
-type="text/css">
+<LINK href="images/jquery.ui.theme.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
-<SCRIPT type="text/javascript">
-//<![CDATA[
-
-$(document).ready( function() {
-  $('form').not('.skip-auto-validation').each( function() {
-    applyCheckOnSubmit(this);
-  });
-
-  $("input:submit, input:button, button, a.simple-button").button();
-});
-
-
-//]]>
-</SCRIPT>
-<SCRIPT src="/skin/common_files/js/ajax.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/top_message.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/popup_open.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery.blockUI.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery.blockUI.defaults.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/js/sticky.js" type="text/javascript"></SCRIPT>
-<SCRIPT type="text/javascript">
-//<![CDATA[
-  var number_format_dec = '.'; var number_format_th = ''; var number_format_point = '2'; var store_language = 'en'; var xcart_web_dir = ""; var images_dir = "/skin/common_files/images"; var alt_images_dir = "/skin/aop/images"; var lbl_no_items_have_been_selected = 'No items have been selected'; var current_area = 'C';  var currency_format = "$x";  var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}."; var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}."; var txt_out_of_stock = "Out of stock"; var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}."; var is_limit = true; var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!"; var lbl_field_required = "Field is required"; var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid."; var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?"; var lbl_blockui_default_message = "Please wait..."; var lbl_error = 'Error'; var lbl_warning = 'Warning'; var lbl_information = 'Information'; var lbl_ok = 'OK'; var lbl_yes = 'Yes'; var lbl_no = 'No'; var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.'; var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';  var txt_email_invalid = "Email address is invalid! Please correct"; var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");  var is_admin_editor = false; var is_responsive_skin = "N"; var  topMessageDelay = []; topMessageDelay['i'] = 10*1000; topMessageDelay['w'] = 60*1000; topMessageDelay['e'] = 0*1000; 
-//]]>
-</SCRIPT>
-<SCRIPT src="/skin/common_files/js/common.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery-migrate.production.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/cluetip/jquery.cluetip.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/modules/Banner_System/js/jquery.cycle.all.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/common_files/lib/jquery_cookie.js" type="text/javascript"></SCRIPT>
-<SCRIPT type="text/javascript">
-//<![CDATA[
-    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg))) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?'; 
-//]]>
-</SCRIPT>
-<SCRIPT src="/skin/common_files/js/check_quantity.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/bootstrap/js/jquery.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/bootstrap/js/bootstrap.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/_includes/js/swiper.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="/skin/aop/_includes/js/main-jquery.js" type="text/javascript"></SCRIPT>
 <LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
-<STYLE type="text/css">
-<!--
--->
-</STYLE>
-<LINK href="/skin/aop/css/altskin.css" rel="stylesheet" type="text/css">
-<STYLE type="text/css">
-<!--
--->
-</STYLE>
 <LINK href="images/bootstrap.css" rel="stylesheet" type="text/css">
 <LINK href="images/xcart.css" rel="stylesheet" type="text/css">
-<LINK href="images/font.css" 
-rel="stylesheet" type="text/css">
-<LINK href="images/swiper.min.css" rel="stylesheet" 
-type="text/css">
+<LINK href="images/font.css" rel="stylesheet" type="text/css">
+<LINK href="images/swiper.min.css" rel="stylesheet" type="text/css">
 <LINK href="images/global.css" rel="stylesheet" type="text/css">
 <LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
-<LINK href="http://www.aopled.com/terms-and-conditions.html" rel="canonical">
+<LINK href="http://www.aopled.com/home.php" rel="canonical">
+<style>
+body, td, th {
+        font-family: Sawarabi Gothi, Arial, Helvetica, sans-serif;
+}
+ .menu-details .col-md-1 {
+     min-height:227px;
+ }
+</style>
 </HEAD>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
-<DIV class="container">
-  <HEADER id="header">
-    <DIV class="header-nav clears"><a href="index.html"><img src="images/astech_W.png" width="211" height="211"></a>
-      <DIV class="fr">
-        <UL id="nav">
-          <LI><A href="Profile.html">会社紹介</A></LI>
-          <LI><A href="all-products.html">製品紹介</A>
-            <DL>
-              <DD><A href="all-products.html">LED Lamps</A></DD>
-              <DD><A href="all-products.html">SMD LED</A></DD>
-              <DD><A href="all-products.html">ハイパワーLED</A></DD>
-              <DD><A href="all-products.html">IR LED</A></DD>
-              <DD><A href="all-products.html">LED 電球</A></DD>
-              <DD><A href="all-products.html">LED 照明</A></DD>
-              <DD><A href="all-products.html">パワーサプライ</A></DD>
-              <DD><A href="all-products.html">PCB Assembly</A></DD>
-              <DD><A href="all-products.html">OEM サービス</A></DD>
-              <DD><A href="all-products.html">ODM Design</A></DD>
-              <DD><A href="all-products.html">LED ディスプレイモジュール</A></DD>
-            </DL>
-          </LI>
-          <LI><A 
-  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
-        </UL>
-      </DIV>
-    </DIV>
-  </HEADER>
-  <STYLE>
-     .menu-details .col-md-1{ min-height:227px;}
-    </STYLE>
+
+<DIV class="container-fluid" ng-app="ui.bootstrap.app">
+    <nav id="header" class="navbar" ng-controller="ContactCtrl">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/astech.png"></a>
+        </div>
+        <DIV id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <LI><A href="Profile.html">会社紹介</A></LI>
+                <LI class="dropdown">
+                    <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        製品紹介<span class="caret"></span>
+                    </A>
+                    <ul id="dropdown-products" class="dropdown-menu">
+                        <li><a href="LED-lamps.html">LED Lamps</a></li>
+                        <li><a href="LED-lamps.html">SMD LED</a></li>
+                    </ul>
+                </LI>
+                <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
+            </ul>
+        </DIV>
+    </nav>
+    <script type="text/ng-template" id="contactModalContent.html">
+<div class="modal-header">
+          <h3 class="modal-title" id="modal-title">Contact Us</h3>
+      </div>
+      <form name="contact-form" ng-submit="submit()">
+          <div class="modal-body" id="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="form-group">
+                          <label for="first_name">First Name</label>
+                          <input type="text" class="form-control" id="first_name" name="first_name" ng-model="contact.first_name" required="required" />
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <div class="form-group">
+                          <label for="last_name">Last Name</label>
+                          <input type="text" class="form-control" id="last_name" name="lastname" ng-model="contact.last_name" required="required" />
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="form-group">
+                          <label for="job_title">Job Title</label>
+                          <input type="text" class="form-control" name="job_title" ng-model="contact.job_title" id="job_title"/ >
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <div class="form-group">
+                          <label for="company">Company</label>
+                          <input type="text" class="form-control" id="company" name="company" ng-model="contact.company" />
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="form-group">
+<label for="email">Email Address</label>
+                          <input type="email" class="form-control" id="email" name="email" ng-model="contact.email" required="required" />
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <div class="form-group">
+                          <label for="phone">Telephone</label>
+                          <input type="text" class="form-control" id="phone" name="phone" ng-model="contact.phone" required="required"  />
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="form-group">
+                          <label for="comment">Questions or Comments</label>
+                          <textarea class="form-control" id="comment" name="comment" rows="6" ng-model="contact.comment" required="required"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <input type="submit" class="btn btn-primary" value="Submit" />
+          </div>
+      </form>
+    </script>
   <DIV class="contact-banner"><img src="images/Terms-banner.jpg"></DIV>
   <DIV class="other-main">
     <H1 class="ac">プライバシー ポリシー</H1>
@@ -181,17 +149,6 @@ type="text/css">
   </SECTION>
   <FOOTER class="footer">
     <div class="footer-top">
-      <div class="clears footer-nav">
-        <DIV class="fl">
-          <UL>
-            <LI><A href="Profile.html">会社紹介</A></LI>
-            <LI><A href="all-products.html">製品紹介</A></LI>
-            <LI><A 
-  href="mailto:info@a-stech.com">お問い合わせ</A></LI>
-          </UL>
-        </DIV>
-        <div class="fr"></div>
-      </div>
       <div class="clears ac">
         <p>大阪府東大阪市長田東3-2-43 ｜ TEL: 06-6748-3660(代)｜FAX: 06-6747-3670｜<a href="mailto:info@a-stech.com">info@a-stech.com</a></p>
       </div>
@@ -202,13 +159,21 @@ type="text/css">
       </DIV>
       <DIV class="fr">
         <UL>
-          <LI>TERMS</LI>
-          <LI><A href="privacy.html">PRIVACY 
-            POLICY</A></LI>
+            <LI><A href="terms.html">TERMS</a></LI>
+          <LI><A href="privacy.html">PRIVACY POLICY</A></LI>
         </UL>
       </DIV>
     </DIV>
   </FOOTER>
 </DIV>
 </BODY>
+<SCRIPT src="skin/common_files/common.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/bootstrap.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery_cookie.js"></SCRIPT>
+<script src="js/ui-bootstrap-custom-build/angular.min.js"></script>
+<script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
+<script src="js/ui-bootstrap-contact.js"></script>
+<script src="images/app.js"></script>
 </HTML>
