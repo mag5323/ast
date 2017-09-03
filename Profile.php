@@ -42,20 +42,20 @@ body, td, th {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="images/astech.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="images/astech.png"></a>
       </div>
       <DIV id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-              <LI><A href="Profile.html">会社紹介</A></LI>
+              <LI><A href="Profile.php">会社紹介</A></LI>
               <LI class="dropdown">
                   <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                       製品紹介<span class="caret"></span>
                   </A>
                   <ul id="dropdown-products" class="dropdown-menu">
-                      <li><a href="LED-lamps.html">LED Lamps</a></li>
-                      <li><a href="SMD-LED.html">SMD LED</a></li>
-                      <li><a href="LED-light.html">LED 照明</a></li>
-                      <li><a href="LED-bulb.html">LED 電球</a></li>
+                      <li><a href="LED-lamps.php">LED Lamps</a></li>
+                      <li><a href="SMD-LED.php">SMD LED</a></li>
+                      <li><a href="LED-light.php">LED 照明</a></li>
+                      <li><a href="LED-bulb.php">LED 電球</a></li>
                   </ul>
               </LI>
               <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
@@ -217,8 +217,8 @@ body, td, th {
       </DIV>
       <DIV class="fr">
         <UL>
-          <LI><a href="terms">TERMS</a></LI>
-          <LI><A href="privacy.html">PRIVACY POLICY</A></LI>
+          <LI><a href="terms.php">TERMS</a></LI>
+          <LI><A href="privacy.php">PRIVACY POLICY</A></LI>
         </UL>
       </DIV>
     </DIV>

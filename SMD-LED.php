@@ -9,12 +9,11 @@
 <META http-equiv="Content-Language" content="en">
 <META name="robots" content="noindex, nofollow">
 <LINK href="favicon.ico" rel="shortcut icon" type="image/png">
-<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
-<TITLE>AS-TECH Welcome</TITLE>
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet">
+<TITLE>AS-TECH Welcome :: SMD LED</TITLE>
 <LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery.ui.theme.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
-<LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
 <LINK href="images/bootstrap.css" rel="stylesheet" type="text/css">
 <LINK href="images/xcart.css" rel="stylesheet" type="text/css">
 <LINK href="images/font.css" rel="stylesheet" type="text/css">
@@ -22,18 +21,10 @@
 <LINK href="images/global.css" rel="stylesheet" type="text/css">
 <LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
 <LINK href="http://www.aopled.com/home.php" rel="canonical">
-<style>
-body, td, th {
-	font-family: Sawarabi Gothi, Arial, Helvetica, sans-serif;
-}
-.menu-details .col-md-1 {
-    min-height:227px;
-}
-</style>
 </HEAD>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
-<DIV class="container-fluid" ng-app="ui.bootstrap.app">
+<DIV class="containerl-fluid" ng-app="ui.bootstrap.app">
     <nav id="header" class="navbar" ng-controller="ContactCtrl">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,22 +33,21 @@ body, td, th {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/astech.png"></a>
+            <a class="navbar-brand" href="index.php"><img src="images/astech.png"></a>
         </div>
         <DIV id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <LI><A href="Profile.html">会社紹介</A></LI>
+                <LI><A href="Profile.php">会社紹介</A></LI>
                 <LI class="dropdown">
                     <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         製品紹介<span class="caret"></span>
                     </A>
                     <ul id="dropdown-products" class="dropdown-menu">
-                        <li><a href="LED-lamps.html">LED Lamps</a></li>
-                        <li><a href="SMD-LED.html">SMD LED</a></li>
-                        <li><a href="LED-light.html">LED 照明</a></li>
-                        <li><a href="LED-bulb.html">LED 電球</a></li>
+                        <li><a href="LED-lamps.php">LED Lamps</a></li>
+                        <li><a href="SMD-LED.php">SMD LED</a></li>
+                        <li><a href="LED-light.php">LED 照明</a></li>
+                        <li><a href="LED-bulb.php">LED 電球</a></li>
                     </ul>
-                </LI>
                 <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
             </ul>
         </DIV>
@@ -125,30 +115,31 @@ body, td, th {
             </div>
         </form>
     </script>
-<div id="carousel-generic" class="carousel slide" data-ride="carousel">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-        <a href="Profile.html"><img src="images/obj1.png" alt="1"></a>
+  <DIV class="featured clearfix">
+      <H2 class="ac">製品紹介<br><small>SMD LED</small></H2>
+    <div class="col-sm-3">
+        <div class="list-group">
+            <a href="files/SMD/3528_P2.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 3528 P2</a>
+            <a href="files/SMD/3528_P4.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 3528 P4</a>
+        </div>
     </div>
-    <div class="item">
-        <a href="Profile.html"><img src="images/obj2.png" alt="2"></a>
+    <div class="col-sm-3">
+        <div class="list-group">
+            <a href="files/SMD/2835.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 2835</a>
+            <a href="files/SMD/5050.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 5050</a>
+        </div>
     </div>
-    <div class="item">
-        <a href="LED-lamps.html"><img src="images/obj3.png" alt="3"></a>
+    <div class="col-sm-3">
+        <div class="list-group">
+            <a href="files/SMD/Bi_color.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Bi color</a>
+        </div>
     </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    <div class="col-sm-3">
+        <div class="list-group">
+            <a href="files/SMD/multi_color.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Multi color</a>
+        </div>
+    </div>
+  </DIV>
   <FOOTER class="footer">
     <div class="footer-top">
       <div class="clears ac">
@@ -161,13 +152,14 @@ body, td, th {
       </DIV>
       <DIV class="fr">
         <UL>
-            <LI><a href="terms.html">TERMS</a></LI>
-          <LI><A href="privacy.html">PRIVACY POLICY</A></LI>
+            <LI><a href="terms.php">TERMS</a></LI>
+          <LI><A href="privacy.php">PRIVACY POLICY</A></LI>
         </UL>
       </DIV>
     </DIV>
   </FOOTER>
 </DIV>
+</BODY>
 <SCRIPT src="skin/common_files/common.js"></SCRIPT>
 <SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
 <SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
@@ -177,5 +169,4 @@ body, td, th {
 <script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
 <script src="js/ui-bootstrap-contact.js"></script>
 <script src="images/app.js"></script>
-</BODY>
 </HTML>

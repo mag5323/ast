@@ -9,11 +9,12 @@
 <META http-equiv="Content-Language" content="en">
 <META name="robots" content="noindex, nofollow">
 <LINK href="favicon.ico" rel="shortcut icon" type="image/png">
-<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet">
-<TITLE>AS-TECH Welcome :: LED 電球</TITLE>
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<TITLE>AS-TECH Welcome</TITLE>
 <LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery.ui.theme.css" rel="stylesheet" type="text/css">
 <LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
+<LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
 <LINK href="images/bootstrap.css" rel="stylesheet" type="text/css">
 <LINK href="images/xcart.css" rel="stylesheet" type="text/css">
 <LINK href="images/font.css" rel="stylesheet" type="text/css">
@@ -21,10 +22,18 @@
 <LINK href="images/global.css" rel="stylesheet" type="text/css">
 <LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
 <LINK href="http://www.aopled.com/home.php" rel="canonical">
+<style>
+body, td, th {
+	font-family: Sawarabi Gothi, Arial, Helvetica, sans-serif;
+}
+.menu-details .col-md-1 {
+    min-height:227px;
+}
+</style>
 </HEAD>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
-<DIV class="containerl-fluid" ng-app="ui.bootstrap.app">
+<DIV class="container-fluid" ng-app="ui.bootstrap.app">
     <nav id="header" class="navbar" ng-controller="ContactCtrl">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,22 +42,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/astech.png"></a>
+            <a class="navbar-brand" href="index.php"><img src="images/astech.png"></a>
         </div>
         <DIV id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <LI><A href="Profile.html">会社紹介</A></LI>
+                <LI><A href="Profile.php">会社紹介</A></LI>
                 <LI class="dropdown">
                     <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         製品紹介<span class="caret"></span>
                     </A>
                     <ul id="dropdown-products" class="dropdown-menu">
-                        <li><a href="LED-lamps.html">LED Lamps</a></li>
-                        <li><a href="SMD-LED.html">SMD LED</a></li>
-                        <li><a href="LED-light.html">LED 照明</a></li>
-                        <li><a href="LED-bulb.html">LED 電球</a></li>
+                        <li><a href="LED-lamps.php">LED Lamps</a></li>
+                        <li><a href="SMD-LED.php">SMD LED</a></li>
+                        <li><a href="LED-light.php">LED 照明</a></li>
+                        <li><a href="LED-bulb.php">LED 電球</a></li>
                     </ul>
-                                                                                                                                                                                                    </LI>
+                </LI>
                 <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
             </ul>
         </DIV>
@@ -116,33 +125,30 @@
             </div>
         </form>
     </script>
-  <DIV class="featured clearfix">
-      <H2 class="ac">製品紹介<br><small>LED 電球</small></H2>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CNF_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CNF Series</a>
-        </div>
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <a href="Profile.php"><img src="images/obj1.png" alt="1"></a>
     </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CMB_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMB Series</a>
-        </div>
+    <div class="item">
+        <a href="Profile.php"><img src="images/obj2.png" alt="2"></a>
     </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CMK_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMK Series</a>
-        </div>
+    <div class="item">
+        <a href="LED-lamps.php"><img src="images/obj3.png" alt="3"></a>
     </div>
-  </DIV>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
   <FOOTER class="footer">
     <div class="footer-top">
       <div class="clears ac">
@@ -155,14 +161,13 @@
       </DIV>
       <DIV class="fr">
         <UL>
-            <LI><a href="terms">TERMS</a></LI>
-          <LI><A href="privacy.html">PRIVACY POLICY</A></LI>
+            <LI><a href="terms.php">TERMS</a></LI>
+          <LI><A href="privacy.php">PRIVACY POLICY</A></LI>
         </UL>
       </DIV>
     </DIV>
   </FOOTER>
 </DIV>
-</BODY>
 <SCRIPT src="skin/common_files/common.js"></SCRIPT>
 <SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
 <SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
@@ -172,4 +177,5 @@
 <script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
 <script src="js/ui-bootstrap-contact.js"></script>
 <script src="images/app.js"></script>
+</BODY>
 </HTML>
