@@ -1,0 +1,9 @@
+<SCRIPT src="skin/common_files/common.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/bootstrap.js"></SCRIPT>
+<SCRIPT src="skin/common_files/lib/jquery_cookie.js"></SCRIPT>
+<script src="js/ui-bootstrap-custom-build/angular.min.js"></script>
+<script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
+<script src="js/ui-bootstrap-contact.js"></script>
+<script src="images/app.js"></script>

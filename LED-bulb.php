@@ -1,121 +1,17 @@
 ﻿<!DOCTYPE HTML>
 <HTML>
-<HEAD>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<META http-equiv="Content-Script-Type" content="text/javascript">
-<META http-equiv="Content-Style-Type" content="text/css">
-<META http-equiv="Content-Language" content="en">
-<META name="robots" content="noindex, nofollow">
-<LINK href="favicon.ico" rel="shortcut icon" type="image/png">
-<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet">
+<head>
+<?php
+    include __DIR__ . '/requires/header.php';
+?>
 <TITLE>AS-TECH Welcome :: LED 電球</TITLE>
-<LINK href="images/jquery.cluetip.css" rel="stylesheet" type="text/css">
-<LINK href="images/jquery.ui.theme.css" rel="stylesheet" type="text/css">
-<LINK href="images/jquery_ui.css" rel="stylesheet" type="text/css">
-<LINK href="images/bootstrap.css" rel="stylesheet" type="text/css">
-<LINK href="images/xcart.css" rel="stylesheet" type="text/css">
-<LINK href="images/font.css" rel="stylesheet" type="text/css">
-<LINK href="images/swiper.min.css" rel="stylesheet" type="text/css">
-<LINK href="images/global.css" rel="stylesheet" type="text/css">
-<LINK href="http://www.aopled.com/favicon.ico" rel="shortcut icon" type="image/png">
-<LINK href="http://www.aopled.com/home.php" rel="canonical">
-</HEAD>
+</head>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
 <DIV class="containerl-fluid" ng-app="ui.bootstrap.app">
-    <nav id="header" class="navbar" ng-controller="ContactCtrl">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.php"><img src="images/astech.png"></a>
-        </div>
-        <DIV id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <LI><A href="Profile.php">会社紹介</A></LI>
-                <LI class="dropdown">
-                    <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        製品紹介<span class="caret"></span>
-                    </A>
-                    <ul id="dropdown-products" class="dropdown-menu">
-                        <li><a href="LED-lamps.php">LED Lamps</a></li>
-                        <li><a href="SMD-LED.php">SMD LED</a></li>
-                        <li><a href="LED-light.php">LED 照明</a></li>
-                        <li><a href="LED-bulb.php">LED 電球</a></li>
-                    </ul>
-                                                                                                                                                                                                    </LI>
-                <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
-            </ul>
-        </DIV>
-    </nav>
+<?php
+    include __DIR__ . '/requires/nav.php';                                                 ?>
 
-    <script type="text/ng-template" id="contactModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title" id="modal-title">Contact Us</h3>
-        </div>
-        <form name="contact-form" ng-submit="submit()">
-            <div class="modal-body" id="modal-body">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="first_name">First Name</label>
-                            <input type="text" class="form-control" id="first_name" name="first_name" ng-model="contact.first_name" required="required" />
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" class="form-control" id="last_name" name="lastname" ng-model="contact.last_name" required="required" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="job_title">Job Title</label>
-                            <input type="text" class="form-control" name="job_title" ng-model="contact.job_title" id="job_title"/ >
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" class="form-control" id="company" name="company" ng-model="contact.company" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" name="email" ng-model="contact.email" required="required" />
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="form-group">
-                            <label for="phone">Telephone</label>
-                            <input type="text" class="form-control" id="phone" name="phone" ng-model="contact.phone" required="required"  />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="form-group">
-                            <label for="comment">Questions or Comments</label>
-                            <textarea class="form-control" id="comment" name="comment" rows="6" ng-model="contact.comment" required="required"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <input type="submit" class="btn btn-primary" value="Submit" />
-            </div>
-        </form>
-    </script>
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>LED 電球</small></H2>
     <div class="col-sm-4">
@@ -143,33 +39,12 @@
         </div>
     </div>
   </DIV>
-  <FOOTER class="footer">
-    <div class="footer-top">
-      <div class="clears ac">
-        <p>大阪府東大阪市長田東3-2-43 ｜ TEL: 06-6748-3660(代)｜FAX: 06-6747-3670｜<a href="mailto:info@a-stech.com">info@a-stech.com</a></p>
-      </div>
-    </div>
-    <DIV class="footer-bottom clears">
-      <DIV class="fl">
-        <P>© 2017 A-S TECH </P>
-      </DIV>
-      <DIV class="fr">
-        <UL>
-            <LI><a href="terms.php">TERMS</a></LI>
-          <LI><A href="privacy.php">PRIVACY POLICY</A></LI>
-        </UL>
-      </DIV>
-    </DIV>
-  </FOOTER>
+<?php
+    include __DIR__ . '/requires/footer.php';
+?>
 </DIV>
+<?php
+    include __DIR__ . '/requires/scripts.php';
+?>
 </BODY>
-<SCRIPT src="skin/common_files/common.js"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery-min.js"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery-ui.js"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/bootstrap.js"></SCRIPT>
-<SCRIPT src="skin/common_files/lib/jquery_cookie.js"></SCRIPT>
-<script src="js/ui-bootstrap-custom-build/angular.min.js"></script>
-<script src="js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
-<script src="js/ui-bootstrap-contact.js"></script>
-<script src="images/app.js"></script>
 </HTML>
