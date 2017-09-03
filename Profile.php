@@ -13,7 +13,7 @@
     include __DIR__ . '/requires/nav.php';
 ?>
 
-  <DIV class="contact-banner"> <IMG src="images/Profile-banner.png"> </DIV>
+  <DIV id="contact-banner"> <IMG src="images/Profile-banner.png"> </DIV>
   <DIV class="our-history">
     <H2 class="ac">私たちの歴史</H2>
     <DIV class="row">
@@ -34,6 +34,7 @@
       </DIV>
     </DIV>
   </DIV>
+  <div class="contact-banner"></div>
   <DIV class="contact-main profile-main">
     <DIV class="row">
       <DIV class="col-sm-6"><img src="images/LEDTECH.png" height="380"></DIV>
@@ -45,6 +46,7 @@
         </DIV>
       </DIV>
     </DIV>
+  <div class="contact-banner"></div>
     <DIV class="row">
       <DIV class="col-sm-6">
         <DIV class="contact-box">
@@ -54,6 +56,7 @@
       </DIV>
       <DIV class="col-sm-6"><img src="images/SERVICE.PNG" height="380"></DIV>
     </DIV>
+  <div class="contact-banner"></div>
     <DIV class="row">
       <DIV class="col-sm-6"><img src="images/CUSTOMER.png" height="380"></DIV>
       <DIV class="col-sm-6">
@@ -69,6 +72,7 @@
         </DIV>
       </DIV>
     </DIV>
+  <div class="contact-banner"></div>
     <DIV class="row">
       <DIV class="col-sm-6">
         <DIV class="contact-box">

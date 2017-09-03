@@ -393,10 +393,15 @@ body {
 #nav dl a {
 	text-transform: uppercase; padding-right: 30px; padding-left: 30px; font-size: 15px; white-space: nowrap;
 }
-.contact-banner img {
+
+#contact-banner img {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.contact-banner {
+    display: none;
 }
 .col-sm-6 img {
     width: 100%;
@@ -623,10 +628,11 @@ a.btn-primary {
 }
 .contact-main .row {
 	width: 100%;
+    margin: 0px;
 }
 .contact-box {
     min-height: 380px;
-    padding: 85px 90px;
+    padding: 50px 30px;
     text-align: justify;
 }
 .contact-box p {
@@ -687,7 +693,8 @@ a.btn-primary {
 	padding: 17px 0px;
 }
 .our-history {
-	padding: 80px; color: rgb(51, 51, 51);
+	padding: 50px 30px;
+    color: rgb(51, 51, 51);
 }
 .our-history .fl {
 	width: 50%; box-sizing: border-box;
@@ -728,17 +735,17 @@ a.btn-primary {
 .profile-main :nth-child(1).row :nth-child(2).col-sm-6 {
 	color: rgb(102, 102, 102); background-color: rgb(255, 255, 255);
 }
-.profile-main :nth-child(2).row :nth-child(1).col-sm-6 {
+.profile-main :nth-child(3).row :nth-child(1).col-sm-6 {
 	color: rgb(255, 255, 255); background-color: rgb(29, 117, 183);
 }
 .profile-main :nth-child(3).row :nth-child(2).col-sm-6 {
 	color: rgb(102, 102, 102); background-color: rgb(255, 255, 255);
 }
-.profile-main :nth-child(4).row :nth-child(1).col-sm-6 {
+.profile-main :nth-child(7).row :nth-child(1).col-sm-6 {
 	color: rgb(255, 255, 255); background-color: rgb(29, 117, 183);
 }
 .profile-mini-banner-05 {
-    padding: 80px;
+    padding: 50px 30px;
     text-align: justify;
 }
 .profile-mini-banner-05 h1 {
@@ -1139,5 +1146,22 @@ a.btn-grey {
         max-width: 250px;
         height: auto;
         margin-top: 0;
+    }
+    .contact-box {
+        min-height: 380px;
+        padding: 85px 90px;
+        text-align: justify;
+    }
+    .our-history {
+        padding: 80px;
+        color: rgb(51, 51, 51);
+    }
+    .contact-banner {
+        display: block;
+        height: 411px;
+        background-image: url('Profile-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
