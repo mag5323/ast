@@ -14,8 +14,8 @@
 ?>
 
   <DIV class="contact-banner"><img src="images/Terms-banner.jpg"></DIV>
-  <DIV class="other-main">
-    <H1 class="ac">プライバシー ポリシー</H1>
+  <DIV class="other-main featured">
+    <h2 class="ac">プライバシー ポリシー</h2>
     <P>尊重し、お客様のプライバシーと www.a-stech.com のユーザーを保護するA-S TECHの方針だ (以下、「当サイト」).このインターネットのプライバシー ステートメントをサイトのユーザーを安心させる、我々 がない販売、共有、または他の人にこのインターネット プライバシー ポリシーに記載の設定とは異なる方法でユーザー情報を借りるしたいです。</p>
     <p><strong>注文および情報の収集を配置します。</strong></p>
     <p>A-S TECHは、サイトでいくつかのポイントでは、サイトのユーザーから情報を収集します。たとえば、我々 は、収集および/またはユーザーが情報を要求します。</p>

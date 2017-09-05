@@ -8,7 +8,7 @@
 </head>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
-<DIV class="container-fluid" ng-app="ui.bootstrap.app">
+<DIV class="container-fluid" id="profile-container" ng-app="ui.bootstrap.app">
 <?php
     include __DIR__ . '/requires/nav.php';
 ?>
@@ -40,7 +40,7 @@
       <DIV class="col-sm-6"><img src="images/LEDTECH.png" height="380"></DIV>
       <DIV class="col-sm-6">
         <DIV class="contact-box">
-          <H1>最先端の技術</H1>
+          <H1 id="except">最先端の技術</H1>
           <P>その後 LED も年々高輝度化が進み、交通信号機に LED が使用される事になり、益々LED 応用製品の多様化が図られ、弊社でも2003 年初めより高輝度 LED を使用したLED 電球を発売しました。 <br>
             2016年より、長年のパートナーであるSANDER ELECTRONICSと合併を行い、より多くのSANDER ELECTRONICS製品を日本市場に提供すると共に、高品質な新商品の創出を目指します。</P>
         </DIV>
