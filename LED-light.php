@@ -16,7 +16,7 @@
       <H2 class="ac">製品紹介<br><small>LED 照明</small></H2>
     <div class="col-sm-4 col-sm-offset-4">
         <div class="list-group">
-            <a href="files/LED-light/PAR38X2.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp PAR52U</a>
+            <a href="files/LED-light/PAR38X2.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp PAR38X2</a>
             <a href="files/LED-light/PAR52U.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp PAR52U-B2</a>
         </div>
     </div>

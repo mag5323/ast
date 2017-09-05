@@ -24,7 +24,7 @@
     </div>
     <div class="col-sm-4">
         <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
+            <img src="files/LED-bulb/CMB.png" class="center-block" height="75">
         </div>
         <div class="list-group">
             <a href="files/LED-bulb/CMB_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMB Series</a>
@@ -32,7 +32,7 @@
     </div>
     <div class="col-sm-4">
         <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
+            <img src="files/LED-bulb/CMK.png" class="center-block" height="75">
         </div>
         <div class="list-group">
             <a href="files/LED-bulb/CMK_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMK Series</a>
