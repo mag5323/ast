@@ -8,7 +8,7 @@
 </head>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
 
-<DIV class="containerl-fluid" ng-app="ui.bootstrap.app">
+<DIV class="container-fluid" ng-app="ui.bootstrap.app">
 <?php
     include __DIR__ . '/requires/nav.php';                                                 ?>
 
