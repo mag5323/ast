@@ -28,6 +28,10 @@
 
 <script type="text/ng-template" id="contactModalContent.html">
     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="dialog" ng-click="cancel($event)">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
         <h3 class="modal-title" id="modal-title">Contact Us</h3>
     </div>
     <form name="contact-form" ng-submit="submit()">
