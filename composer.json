@@ -1,0 +1,8 @@
+{
+    "name": "root/astech-dev",
+    "description": "astech-de website",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

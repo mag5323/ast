@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <input type="submit" class="btn btn-primary" value="Submit" />
+            <input type="submit" class="btn btn-primary" ng-value="submitVal" ng-disabled="submitting"/>
         </div>
     </form>
 </script>

@@ -7,9 +7,18 @@ angular.module('ui.bootstrap.app', ['ui.bootstrap'])
         backdrop: true,
         templateUrl: 'contactModalContent.html',
         controller: function ($scope, $uibModalInstance) {
+          $scope.submitting = false;
+          $scope.submitVal = 'Send';
           $scope.submit = function () {
-            console.log($scope.contact);
-            $uibModalInstance.dismiss('cancel');
+            $scope.submitting = true;
+            $scope.submitVal = 'Sending';
+            $http.post('mail.php', {'data': $scope.contact})
+              .then(function(resp) {
+                if (200 === resp.status) {
+                  $scope.submitting = false;
+                  $scope.submitVal= 'Send';
+                }
+              });
           }
           $scope.cancel = function () {
             $uibModalInstance.dismiss('cancel');
