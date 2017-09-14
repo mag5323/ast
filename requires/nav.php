@@ -21,8 +21,10 @@
                     <li><a href="IR-LED.php">IR LED</a></li>
                     <li><a href="LED-light.php">LED 照明</a></li>
                     <li><a href="LED-bulb.php">LED 電球</a></li>
+                    <li><a href="power-supply.php">Power Supply</a></li>
                 </ul>
-            </LI>                                                                                     <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
+            </LI>
+            <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
         </ul>
     </DIV>
 </nav>
