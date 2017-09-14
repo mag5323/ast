@@ -18,10 +18,11 @@
                 <ul id="dropdown-products" class="dropdown-menu">
                     <li><a href="LED-lamps.php">LED Lamps</a></li>
                     <li><a href="SMD-LED.php">SMD LED</a></li>
+                    <li><a href="LED-highpowered.php">ハイパワーLED</a></li>
                     <li><a href="IR-LED.php">IR LED</a></li>
-                    <li><a href="LED-light.php">LED 照明</a></li>
                     <li><a href="LED-bulb.php">LED 電球</a></li>
-                    <li><a href="power-supply.php">Power Supply</a></li>
+                    <li><a href="LED-light.php">LED 照明</a></li>
+                    <li><a href="power-supply.php">パワーサプライ</a></li>
                 </ul>
             </LI>
             <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>

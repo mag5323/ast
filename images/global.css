@@ -1126,6 +1126,17 @@ a.btn-grey {
 #top-message {
 	padding: 8px; text-align: center; font-size: 15px;
 }
+.high-power div.col-sm-3 {
+    margin-top: 40px;
+}
+.high-power div.col-sm-3 img {
+    height: 130px;
+}
+
+.high-power div.col-sm-3 p {
+    margin-top: 15px;
+    font-size: 15px;
+}
 @media screen and (min-width:960px)
 {
     #wrap {
