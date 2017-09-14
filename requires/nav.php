@@ -18,6 +18,7 @@
                 <ul id="dropdown-products" class="dropdown-menu">
                     <li><a href="LED-lamps.php">LED Lamps</a></li>
                     <li><a href="SMD-LED.php">SMD LED</a></li>
+                    <li><a href="IR-LED.php">IR LED</a></li>
                     <li><a href="LED-light.php">LED 照明</a></li>
                     <li><a href="LED-bulb.php">LED 電球</a></li>
                 </ul>
