@@ -19,7 +19,7 @@
             <img src="files/IR-LED/Renaissance55.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 55º</a>
+            <a href="#" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 55º</a>
         </div>
     </div>
     <div class="col-sm-4">
@@ -27,7 +27,7 @@
             <img src="files/IR-LED/Renaissance130.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 130º</a>
+            <a href="#" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 130º</a>
         </div>
     </div>
     <div class="col-sm-4">
@@ -35,7 +35,7 @@
             <img src="files/IR-LED/Renaissance140.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 140º</a>
+            <a href="#" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 140º</a>
         </div>
     </div>
   </DIV>

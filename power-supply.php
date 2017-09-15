@@ -19,10 +19,10 @@
             <img src="files/power-supply/IP65.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="files/power-supply/Datasheet_lne-12v100w調光.pdf" class="list-group-item">
+            <a href="files/power-supply/Datasheet_lne-12v100w調光.pdf" class="list-group-item" target="_blank">
                 <span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 130º
             </a>
-            <a href="files/power-supply/Datasheet_lne-12v100w調節可能.pdf" class="list-group-item">
+            <a href="files/power-supply/Datasheet_lne-12v100w調節可能.pdf" class="list-group-item" target="_blank">
                 <span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 140º
             </a>
         </div>

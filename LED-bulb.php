@@ -19,7 +19,7 @@
             <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="files/LED-bulb/CNF_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CNF Series</a>
+            <a href="files/LED-bulb/CNF_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CNF Series</a>
         </div>
     </div>
     <div class="col-sm-4">
@@ -27,7 +27,7 @@
             <img src="files/LED-bulb/CMB.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="files/LED-bulb/CMB_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMB Series</a>
+            <a href="files/LED-bulb/CMB_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMB Series</a>
         </div>
     </div>
     <div class="col-sm-4">
@@ -35,7 +35,7 @@
             <img src="files/LED-bulb/CMK.png" class="center-block" height="75">
         </div>
         <div class="list-group">
-            <a href="files/LED-bulb/CMK_Series_1.pdf" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMK Series</a>
+            <a href="files/LED-bulb/CMK_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMK Series</a>
         </div>
     </div>
   </DIV>
