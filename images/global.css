@@ -787,6 +787,9 @@ a.btn-primary {
 .profile-bottom li a {
 	color: rgb(255, 255, 255);
 }
+div.well h5.text-center {
+    margin-top: 3vh;
+}
 .dealer-locator {
 	padding: 0px 40px 40px;
 }
