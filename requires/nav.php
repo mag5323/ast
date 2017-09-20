@@ -24,6 +24,7 @@
                     <li><a href="LED-light.php">LED 照明</a></li>
                     <li><a href="power-supply.php">パワーサプライ</a></li>
                     <li><a href="PCB-Assembly.php">PCB Assembly</a></li>
+                    <li><a href="OEM-ODM.php">OEM/ODMサービス</a></li>
                 </ul>
             </LI>
             <LI><a href="#" ng-click="open()">お問い合わせ</a></LI>
