@@ -18,42 +18,42 @@
     <div class="row">
         <div class="col-sm-3">
             <img src="files/highpowered-led/Firefly7090.png" class="center-block">
-            <p class="text-center">Firefly 7090</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Firefly7090.pdf">Firefly 7090</a></p>
         </div>
 
         <div class="col-sm-3">
             <img src="files/highpowered-led/Renaissance3030-01.png" class="center-block">
-            <p class="text-center">Renaissance 3030-01</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-01.pdf">Renaissance 3030-01</a></p>
         </div>
 
         <div class="col-sm-3">
             <img src="files/highpowered-led/Renaissance3030-02.png" class="center-block">
-            <p class="text-center">Renaissance 3030-02</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-02.pdf">Renaissance 3030-02</a></p>
         </div>
 
         <div class="col-sm-3">
             <img src="files/highpowered-led/Renaissance3030-03.png" class="center-block">
-            <p class="text-center">Renaissance 3030-03</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-03.pdf">Renaissance 3030-03</a></p>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3">
             <img src="files/highpowered-led/Renaissance3535-01.png" class="center-block">
-            <p class="text-center">Renaissance 3535-01</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3535-01.pdf">Renaissance 3535-01</a></p>
         </div>
 
         <div class="col-sm-3">
             <img src="files/highpowered-led/Renaissance3535-02.png" class="center-block">
-            <p class="text-center">Renaissance 3535-02</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3535-02.pdf">Renaissance 3535-02</a></p>
         </div>
 
         <div class="col-sm-3">
             <img src="files/highpowered-led/Stellar-01.png" class="center-block">
-            <p class="text-center">Stellar-01</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Stellar-01,02.pdf">Stellar-01</a></p>
         </div>
         <div class="col-sm-3">
             <img src="files/highpowered-led/Stellar-02.png" class="center-block">
-            <p class="text-center">Stellar-03</p>
+            <p class="text-center"><a href="files/highpowered-led/files/Stellar-01,02.pdf">Stellar-02</a></p>
         </div>
     </div>
   </DIV>
