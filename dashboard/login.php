@@ -1,4 +1,18 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
+$_SESSION['message'] = '';
+if (!empty($_POST['account'])) {
+    if ('admin' === $_POST['account'] && !empty($_POST['password'])) {
+        $_SESSION['login'] = true;
+
+        header('Location: /dashboard');
+        exit;
+    }
+
+    $_SESSION['message'] = '<div class="alert alert-danger">Login Faild</div>';
+}
+
+?><!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8">
@@ -22,10 +36,10 @@
                         <div class="login-body">
                             <form method="post">
                                 <div class="form-group">
-                                    <input id="account" class="form-control" placeholder="Account">
+                                    <input id="account" name="account" class="form-control" placeholder="Account">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" id="password" class="form-control" placeholder="Password">
+                                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                                 </div>
                                 <button id="submit" class="btn btn-info">Login</button>
                             </form>
@@ -33,7 +47,7 @@
                     </div><!-- end .login-form -->
                     <div class="row">
                         <div class="col-md-12">
-                            <div id="message" class="form-group text-center"></div>
+                            <div id="message" class="form-group text-center"><?php echo $_SESSION['message']; ?></div>
                         </div><!-- end .col-md-12 -->
                     </div><!-- end .row-->
                 </div><!-- end .login-wrapper -->
