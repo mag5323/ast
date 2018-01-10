@@ -6,10 +6,16 @@ $_SESSION['message'] = '';
 if (!empty($_POST['account'])) {
 
     $db = $GLOBALS['db'];
-    $rs = $db->query("SELECT * FROM admin");
-    $accountInfo = ($rs->fetchAll())[0];
+    $sql = "SELECT * FROM admin WHERE account = ? AND password = ?";
+    try {
+        $rs = $db->prepare($sql);
+        $rs->execute([$_POST['account'], md5($_POST['password'])]);
+        $accountInfo = $rs->fetchAll();
+    } catch (Exception $e) {
+        //
+    }
 
-    if ($accountInfo['account'] === $_POST['account'] && $accountInfo['password'] === md5($_POST['password'])) {
+    if (!empty($accountInfo)) {
         $_SESSION['login'] = true;
 
         header('Location: /dashboard');
