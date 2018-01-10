@@ -16,4 +16,10 @@
     <script src="js/jquery.min.js"></script>
     <!-- CKEditor -->
     <script src="js/ckeditor.js"></script>
+
+    <style>
+        .ck-editor__editable {
+            min-height: 500px;
+        }
+    </style>
 </head>
