@@ -1,8 +1,15 @@
 <?php
+require __DIR__ . '/../connection.php';
+
 session_start();
 $_SESSION['message'] = '';
 if (!empty($_POST['account'])) {
-    if ('admin' === $_POST['account'] && !empty($_POST['password'])) {
+
+    $db = $GLOBALS['db'];
+    $rs = $db->query("SELECT * FROM admin");
+    $accountInfo = ($rs->fetchAll())[0];
+
+    if ($accountInfo['account'] === $_POST['account'] && $accountInfo['password'] === md5($_POST['password'])) {
         $_SESSION['login'] = true;
 
         header('Location: /dashboard');
