@@ -14,4 +14,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+    <!-- CKEditor -->
+    <script src="js/ckeditor.js"></script>
 </head>
