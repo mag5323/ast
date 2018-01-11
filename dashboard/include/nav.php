@@ -16,7 +16,7 @@
                         <a href="/dashboard"><i class="fa fa-fw fa-dashboard"></i> 首頁</a>
                     </li>
                     <li>
-                        <a href="/logout"><i class="fa fa-fw fa-sign-out"></i> 登出</a>
+                        <a href="/dashboard/logout.php"><i class="fa fa-fw fa-sign-out"></i> 登出</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
