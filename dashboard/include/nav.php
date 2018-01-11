@@ -17,6 +17,9 @@
                         <a href="/"><i class="fa fa-fw fa-dashboard"></i> WebSite</a>
                     </li>
                     <li>
+                        <a href="/dashboard"><i class="fa fa-fw fa-dashboard"></i> News</a>
+                    </li>
+                    <li>
                         <a href="/dashboard/story_info.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史_info</a>
                     </li>
                     <li>
