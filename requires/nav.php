@@ -11,6 +11,7 @@
     <DIV id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
             <LI><A href="Profile.php">会社紹介</A></LI>
+            <li><a href="news.php">ニュース</a></li>
             <LI class="dropdown">
                 <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     製品紹介<span class="caret"></span>
