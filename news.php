@@ -60,7 +60,7 @@ $newsByYear = $raw->fetchAll();
 <DIV class="featured clearfix">
     <div class="col-sm-3">
         <ul id="sidebar">
-            <p>カ－カナカタ</p>
+            <p>アーカイブス</p>
             <?php
             foreach ($years as $year) {
                 echo '<li><a href="news.php?y=' . $year['year'] . '">' . $year['year'] . '</a></li>';
@@ -70,7 +70,7 @@ $newsByYear = $raw->fetchAll();
     </div>
     <div class="col-sm-9" style="border-left: 1px solid #bbb">
         <ul id="news-container">
-            <p>カ－カナカカナ</p>
+            <p>プレスリリース</p>
             <?php
             foreach ($newsByYear as $news) {
                 $str = '<span class="date">' . date('Y.n.j', $news['created_at']) . '</span>';
