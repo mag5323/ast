@@ -15,7 +15,8 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- CKEditor -->
-    <script src="js/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.8.0/standard-all/ckeditor.js"></script>
+    <script src="js/ckfinder/ckfinder.js"></script>
 
     <style>
         .ck-editor__editable {
