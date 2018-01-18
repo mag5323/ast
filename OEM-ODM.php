@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('oem_odm')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -19,14 +32,7 @@
     </div>
     <div class="col-sm-7">
         <div class="assembly">
-            <p>
-        OEMサービス/ODMサービス
-エーエステックはSANDER ELECTRONICSと共にOEMとODMでお客様をサポート致します。
-主にLEDディスプレイ、LED照明(投光器等)、PCB設計を得意とし、世界中に製品を提供している実績があります。
-お客様からの厳しい品質要求に応えるため、品質管理部門と連携し、徹底した品質管理を実施しております。
-豊富な経験が高度な技術力と安定した品質を保証いたします。
-新規LED製品開発をお考えのお客様はご気軽にご連絡ください。
-            </p>
+			<?php echo $arr['oem_odm']; ?>
         </div>
     </div>
     </div>

@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('pcb_assembly')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -19,7 +32,7 @@
     </div>
     <div class="col-sm-7">
         <div class="assembly">
-            <p> サンダー電子は台湾北部の宜蘭県にPCBアッセンブリ工場を有しております。 ディスプレイモジュールの製造実績と開発経験から得た品質管理を活かし、 お客様に高品質なPCB Assemblyサービスを提供いたします。 宜蘭工場は複数の生産ラインをコントロールしているので、 お客様の必要な数量に関わらず、柔軟に対応させて頂きます。 </p>
+			<?php echo $arr['pcb_assembly']; ?>
         </div>
     </div>
     </div>

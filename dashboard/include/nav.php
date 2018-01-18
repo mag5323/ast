@@ -41,6 +41,12 @@
                         <a href="/dashboard/about.php"><i class="fa fa-fw fa-dashboard"></i> エー・エス・テックについて</a>
                     </li>
                     <li>
+                        <a href="/dashboard/pcb_assembly.php"><i class="fa fa-fw fa-dashboard"></i> 製品紹介 PCB Assembly</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/oem_odm.php"><i class="fa fa-fw fa-dashboard"></i> 製品紹介 OEM/ODMサービス</a>
+                    </li>
+                    <li>
                         <a href="/dashboard/logout.php"><i class="fa fa-fw fa-sign-out"></i> 登出</a>
                     </li>
                 </ul>
