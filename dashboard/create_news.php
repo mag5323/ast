@@ -45,7 +45,7 @@
                 <br><br><br>
                 <div class="row">
                     <div class="col-md-12">
-                        <textarea id="editor"></textarea>
+                        <textarea id="editor" name="editor"></textarea>
                     </div><!-- end .col-md-12-->
                 </div><!-- end .row -->
                 <div class="row">
@@ -62,14 +62,20 @@
                 $(function() {
                     var editorObj;
 
-                    ClassicEditor
-                        .create(document.querySelector('#editor'))
-                        .then(editor => {
-                            editorObj = editor;
-                        })
-                        .catch( error => {
-                            console.error( error );
-                        });
+                    CKFinder.setupCKEditor();
+                    editorObj = CKEDITOR.replace('editor', {
+                        toolbar: [
+                            { name: 'clipboard', items: [ 'Undo', 'Redo' ] },
+                            { name: 'styles', items: [ 'Styles', 'Format' ] },
+                            { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+                            { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+                            { name: 'links', items: [ 'Link', 'Unlink' ] },
+                            { name: 'insert', items: [ 'EmbedSemantic', 'Table' ] },
+                            { name: 'tools', items: [ 'Maximize' ] },
+                            { name: 'editing', items: [ 'Scayt' ] }
+                        ],
+                        language: 'ja'
+                    });
 
                     $('.submit').click(function(e) {
                         e.preventDefault();
