@@ -12,33 +12,41 @@
                 <li><a class="navbar-link" href="#"><i class="fa fa-user"></i> admin </a></li>
             </ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
+                <ul class="nav navbar-nav side-nav navbar-sidenav" id="accordion">
                     <li>
                         <a href="/"><i class="fa fa-fw fa-dashboard"></i> WebSite</a>
                     </li>
                     <li>
                         <a href="/dashboard"><i class="fa fa-fw fa-dashboard"></i> News</a>
                     </li>
-                    <li>
-                        <a href="/dashboard/story_info.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史_info</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/story.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/technology.php"><i class="fa fa-fw fa-dashboard"></i> 最先端の技術</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/design.php"><i class="fa fa-fw fa-dashboard"></i> 設計支援</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/oem_service.php"><i class="fa fa-fw fa-dashboard"></i> OEMサービス</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/oem_service2.php"><i class="fa fa-fw fa-dashboard"></i> ODMサービス2</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/about.php"><i class="fa fa-fw fa-dashboard"></i> エー・エス・テックについて</a>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="会社紹介">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#accordion">
+                            <i class="fa fa-fw fa-wrench"></i>
+                            <span class="nav-link-text">会社紹介</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                                <a href="/dashboard/story_info.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史_info</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/story.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/technology.php"><i class="fa fa-fw fa-dashboard"></i> 最先端の技術</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/design.php"><i class="fa fa-fw fa-dashboard"></i> 設計支援</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/oem_service.php"><i class="fa fa-fw fa-dashboard"></i> OEMサービス</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/oem_service2.php"><i class="fa fa-fw fa-dashboard"></i> ODMサービス2</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/about.php"><i class="fa fa-fw fa-dashboard"></i> エー・エス・テックについて</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/dashboard/pcb_assembly.php"><i class="fa fa-fw fa-dashboard"></i> 製品紹介 PCB Assembly</a>
