@@ -14,6 +14,10 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- sb-admin -->
+    <script src="js/sb-admin.js"></script>
     <!-- CKEditor -->
     <script src="https://cdn.ckeditor.com/4.8.0/standard-all/ckeditor.js"></script>
     <script src="js/ckfinder/ckfinder.js"></script>
