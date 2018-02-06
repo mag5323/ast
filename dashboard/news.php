@@ -77,18 +77,17 @@
                     var editorObj;
                     CKFinder.setupCKEditor();
                     editorObj = CKEDITOR.replace('editor', {
-                        toolbar: [
-                            { name: 'clipboard', items: [ 'Undo', 'Redo' ] },
-                            { name: 'styles', items: [ 'Styles', 'Format' ] },
-                            { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
-                            { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
-                            { name: 'links', items: [ 'Link', 'Unlink' ] },
-                            { name: 'insert', items: [ 'Image', 'EmbedSemantic', 'Table' ] },
-                            { name: 'tools', items: [ 'Maximize' ] },
-                            { name: 'editing', items: [ 'Scayt' ] }
+                        toolbarGroups: [
+							{name: 'basicstyles', groups: ['basicstyles']},
+							{name: 'links', groups: ['links']},
+							{name: 'paragraph', groups: ['list', 'blocks']},
+							{name: 'document', groups: ['mode']},
+							{name: 'insert', groups: ['insert']},
+							{name: 'styles', groups: ['styles']},
                         ],
-                        language: 'ja'
+                        language: 'ja',
                     });
+
 
                     $('.submit').click(function(e) {
                         e.preventDefault();
