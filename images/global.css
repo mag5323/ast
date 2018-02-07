@@ -1184,3 +1184,9 @@ a.btn-grey {
         background-attachment: fixed;
     }
 }
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 500px;
+}
