@@ -48,11 +48,22 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="/dashboard/pcb_assembly.php"><i class="fa fa-fw fa-dashboard"></i> 製品紹介 PCB Assembly</a>
-                    </li>
-                    <li>
-                        <a href="/dashboard/oem_odm.php"><i class="fa fa-fw fa-dashboard"></i> 製品紹介 OEM/ODMサービス</a>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="製品紹介">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseIntro" data-parent="#accordion">
+                            <i class="fa fa-fw fa-wrench"></i>
+                            <span class="nav-link-text">製品紹介</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseIntro">
+                            <li>
+                                <a href="/dashboard/power_supply.php"><i class="fa fa-fw fa-dashboard"></i> パワーサプライ</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/pcb_assembly.php"><i class="fa fa-fw fa-dashboard"></i> PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/oem_odm.php"><i class="fa fa-fw fa-dashboard"></i> OEM/ODMサービス</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/dashboard/logout.php"><i class="fa fa-fw fa-sign-out"></i> 登出</a>
