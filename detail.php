@@ -48,7 +48,9 @@ $detail = $raw->fetchAll();
                     ?>
                 </h3>
             </div>
-        <?php echo $detail[0]['context']; ?>
+            <?php
+                printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($detail[0]['context']));
+            ?>
         </div>
     </div>
 </DIV>
