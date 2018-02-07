@@ -19,7 +19,7 @@ $newsByYear = $raw->fetchAll();
 ?>
 <TITLE>AS-TECH Welcome :: ニュース</TITLE>
 <style>
-    li {
+    #news-container li {
         font-size: 1.2em;
         font-family: monospace;
         padding: 5px;
@@ -46,9 +46,9 @@ $newsByYear = $raw->fetchAll();
         border-bottom: 2px solid #bbb;
         margin-bottom: 15px;
     }
-    li a { color: #337ab7; }
-    li a:link {color: #337ab7; }
-    li a:visited {color: #337ab7; }
+    #news-container li a { color: #337ab7; }
+    #news-container li a:link {color: #337ab7; }
+    #news-container li a:visited {color: #337ab7; }
 </style>
 </head>
 <BODY class="fancycat-page-skin-icons fancycat-page-subskin-e " id="page-container">
