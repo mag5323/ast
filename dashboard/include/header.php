@@ -19,7 +19,7 @@
     <!-- sb-admin -->
     <script src="js/sb-admin.js"></script>
     <!-- CKEditor -->
-    <script src="https://cdn.ckeditor.com/4.8.0/standard-all/ckeditor.js"></script>
+    <script src="js/ckeditor-releases/ckeditor.js"></script>
     <script src="js/ckfinder/ckfinder.js"></script>
 
     <style>
