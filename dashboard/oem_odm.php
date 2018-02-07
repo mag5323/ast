@@ -67,22 +67,8 @@
             </div><!-- end .container-fluid -->
             <script>
                 $(function() {
-                    var editorObj;
-
+                    var editorObj = CKEDITOR.replace('editor');
                     CKFinder.setupCKEditor();
-                    editorObj = CKEDITOR.replace('editor', {
-                        toolbar: [
-                            { name: 'clipboard', items: [ 'Undo', 'Redo' ] },
-                            { name: 'styles', items: [ 'Styles', 'Format' ] },
-                            { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
-                            { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
-                            { name: 'links', items: [ 'Link', 'Unlink' ] },
-                            { name: 'insert', items: [ 'EmbedSemantic', 'Table' ] },
-                            { name: 'tools', items: [ 'Maximize' ] },
-                            { name: 'editing', items: [ 'Scayt' ] }
-                        ],
-                        language: 'ja'
-                    });
 
                     $('.submit').click(function(e) {
                         e.preventDefault();
