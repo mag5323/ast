@@ -74,20 +74,8 @@
             </div><!-- end .container-fluid -->
             <script>
                 $(function() {
-                    var editorObj;
+                    var editorObj = CKEDITOR.replace('editor');
                     CKFinder.setupCKEditor();
-                    editorObj = CKEDITOR.replace('editor', {
-                        toolbarGroups: [
-							{name: 'basicstyles', groups: ['basicstyles']},
-							{name: 'links', groups: ['links']},
-							{name: 'paragraph', groups: ['list', 'blocks']},
-							{name: 'document', groups: ['mode']},
-							{name: 'insert', groups: ['insert']},
-							{name: 'styles', groups: ['styles']},
-                        ],
-                        language: 'ja',
-                    });
-
 
                     $('.submit').click(function(e) {
                         e.preventDefault();
