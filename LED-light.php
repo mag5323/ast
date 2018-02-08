@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('led_light')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+        $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><<!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -10,30 +23,15 @@
 
 <DIV class="container-fluid" ng-app="ui.bootstrap.app">
 <?php
-    include __DIR__ . '/requires/nav.php';                                                ?>
-
+    include __DIR__ . '/requires/nav.php';
+?>
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>LED 照明</small></H2>
-    <div class="col-sm-4 col-sm-offset-2">
-        <div class="well">
-            <img src="files/LED-light/PAR38.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-light/PAR38X2.pdf" class="list-group-item" target="_blank">
-                <span class="glyphicon glyphicon-chevron-right"></span>>&nbsp PAR38X2
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-light/PAR52U-B2.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-light/PAR52U.pdf" class="list-group-item" target="_blank">
-                <span class="glyphicon glyphicon-chevron-right"></span>>&nbsp PAR52U-B2
-            </a>
-        </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+      <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['led_light']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';
