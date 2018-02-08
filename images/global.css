@@ -393,12 +393,6 @@ body {
 #nav dl a {
 	text-transform: uppercase; padding-right: 30px; padding-left: 30px; font-size: 15px; white-space: nowrap;
 }
-.assembly p {
-    font-size: 1.8em;
-    line-height: 2.0em;
-    text-align: justify;
-}
-
 #contact-banner img {
     position: relative;
     width: 100%;

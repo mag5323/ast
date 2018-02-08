@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('power_supply')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -14,28 +27,11 @@
 ?>
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>パワーサプライ</small></H2>
-    <div class="col-sm-4 col-sm-offset-2">
-        <div class="well">
-            <img src="files/power-supply/IP65.png" class="center-block" height="75">
-            <h5 class="text-center">調節可能　100W / 120W / 150W / 185W</h5>
-        </div>
-        <div class="list-group">
-            <a href="files/power-supply/Datasheet_lne-12v100w調光.pdf" class="list-group-item" target="_blank">
-                <span class="glyphicon glyphicon-chevron-right"></span>12V　100V　データシート
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/power-supply/IP67.png" class="center-block" height="75">
-            <h5 class="text-center">調光可能　100W / 120W / 150W / 185W</h5>
-        </div>
-        <div class="list-group">
-            <a href="files/power-supply/Datasheet_lne-12v100w調節可能.pdf" class="list-group-item" target="_blank">
-                <span class="glyphicon glyphicon-chevron-right"></span>12V　100V　データシート
-            </a>
-        </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+      <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['power_supply']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';

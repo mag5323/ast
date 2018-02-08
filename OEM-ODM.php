@@ -27,15 +27,11 @@ foreach ($raws as $raw) {
 
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>OEM/ODMサービス</small></H2>
-    <div class="col-sm-3 col-sm-offset-1">
-        <img src="files/OEM_ODM.png" class="img-responsive">
-    </div>
-    <div class="col-sm-7">
-        <div class="assembly">
-			<?php echo $arr['oem_odm']; ?>
-        </div>
-    </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+      <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['oem_odm']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';
