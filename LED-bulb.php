@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('led_bulb')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -14,30 +27,11 @@
 
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>LED 電球</small></H2>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CNF.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CNF_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CNF Series</a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CMB.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CMB_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMB Series</a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/LED-bulb/CMK.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/LED-bulb/CMK_Series_1.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp CMK Series</a>
-        </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+      <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['led_bulb']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';

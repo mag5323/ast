@@ -55,6 +55,9 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseIntro">
                             <li>
+                                <a href="/dashboard/led_bulb.php"><i class="fa fa-fw fa-dashboard"></i> LED 電球</a>
+                            </li>
+                            <li>
                                 <a href="/dashboard/led_light.php"><i class="fa fa-fw fa-dashboard"></i> LED 照明</a>
                             </li>
                             <li>
