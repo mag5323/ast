@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('smd_led')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -15,44 +28,11 @@
 
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>SMD LED</small></H2>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="well">
-                    <img src="files/SMD/SMD-L.png" class="center-block" style="width:137px">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="list-group">
-                    <a href="files/SMD/3528_P2.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 3528 P2</a>
-                    <a href="files/SMD/3528_P4.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 3528 P4</a>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="list-group">
-                    <a href="files/SMD/2835.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 2835</a>
-                    <a href="files/SMD/5050.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp 5050</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="well">
-                    <img src="files/SMD/SMD-R.png" class="center-block" style="width:106px">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="list-group">
-                    <a href="files/SMD/Bi_color.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Bi color</a>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="list-group">
-            <a href="files/SMD/multi_color.pdf" target="_blank" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Multi color</a>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+      <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['smd_led']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';

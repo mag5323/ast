@@ -55,6 +55,9 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseIntro">
                             <li>
+                                <a href="/dashboard/smd_led.php"><i class="fa fa-fw fa-dashboard"></i> SMD LED</a>
+                            </li>
+                            <li>
                                 <a href="/dashboard/led_highpowered.php"><i class="fa fa-fw fa-dashboard"></i> ハイパワーLED</a>
                             </li>
                             <li>
