@@ -55,6 +55,9 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseIntro">
                             <li>
+                                <a href="/dashboard/led_lamps.php"><i class="fa fa-fw fa-dashboard"></i> LED Lamps</a>
+                            </li>
+                            <li>
                                 <a href="/dashboard/smd_led.php"><i class="fa fa-fw fa-dashboard"></i> SMD LED</a>
                             </li>
                             <li>
