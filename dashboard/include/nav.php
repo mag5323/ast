@@ -55,6 +55,9 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseIntro">
                             <li>
+                                <a href="/dashboard/ir_led.php"><i class="fa fa-fw fa-dashboard"></i> IR LED</a>
+                            </li>
+                            <li>
                                 <a href="/dashboard/led_bulb.php"><i class="fa fa-fw fa-dashboard"></i> LED 電球</a>
                             </li>
                             <li>

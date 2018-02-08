@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('ir_led')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -14,36 +27,11 @@
 ?>
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>IR LED</small></H2>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/IR-LED/Renaissance55.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/IR-LED/IR-Renaissance55-130-140.pdf" target="_blank" class="list-group-item">
-                <span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 55º
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/IR-LED/Renaissance130.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/IR-LED/IR-Renaissance55-130-140.pdf" target="_blank" class="list-group-item">
-                <span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 130º
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="well">
-            <img src="files/IR-LED/Renaissance140.png" class="center-block" height="75">
-        </div>
-        <div class="list-group">
-            <a href="files/IR-LED/IR-Renaissance55-130-140.pdf" target="_blank" class="list-group-item">
-                <span class="glyphicon glyphicon-chevron-right"></span>&nbsp IR Renaissance 140º
-            </a>
-        </div>
-    </div>
+      <div class="col-sm-10 col-sm-offset-1">
+ 	  <?php
+          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['ir_led']));
+      ?>
+      </div>
   </DIV>
 <?php
     include __DIR__ . '/requires/footer.php';
