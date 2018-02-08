@@ -9,77 +9,75 @@
                 <a class="navbar-brand" href="/dashboard">Dashboard</a>
             </div>
             <ul class="nav navbar-right top-nav">
-                <li><a class="navbar-link" href="#"><i class="fa fa-user"></i> admin </a></li>
+                <li><a class="navbar-link" href="#"><i class="fa fa-fw fa-user"></i> admin </a></li>
             </ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav navbar-sidenav" id="accordion">
                     <li>
-                        <a href="/"><i class="fa fa-fw fa-dashboard"></i> WebSite</a>
+                        <a href="/"><i class="fa fa-fw fa-home"></i> WebSite</a>
                     </li>
                     <li>
-                        <a href="/dashboard"><i class="fa fa-fw fa-dashboard"></i> News</a>
+                        <a href="/dashboard"></i> News</a>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="会社紹介">
                         <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#accordion">
-                            <i class="fa fa-fw fa-wrench"></i>
                             <span class="nav-link-text">会社紹介</span>
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a href="/dashboard/story_info.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史_info</a>
+                                <a href="/dashboard/story_info.php"></i> 私たちの歴史_info</a>
                             </li>
                             <li>
-                                <a href="/dashboard/story.php"><i class="fa fa-fw fa-dashboard"></i> 私たちの歴史</a>
+                                <a href="/dashboard/story.php"></i> 私たちの歴史</a>
                             </li>
                             <li>
-                                <a href="/dashboard/technology.php"><i class="fa fa-fw fa-dashboard"></i> 最先端の技術</a>
+                                <a href="/dashboard/technology.php"></i> 最先端の技術</a>
                             </li>
                             <li>
-                                <a href="/dashboard/design.php"><i class="fa fa-fw fa-dashboard"></i> 設計支援</a>
+                                <a href="/dashboard/design.php"></i> 設計支援</a>
                             </li>
                             <li>
-                                <a href="/dashboard/oem_service.php"><i class="fa fa-fw fa-dashboard"></i> OEMサービス</a>
+                                <a href="/dashboard/oem_service.php"></i> OEMサービス</a>
                             </li>
                             <li>
-                                <a href="/dashboard/oem_service2.php"><i class="fa fa-fw fa-dashboard"></i> ODMサービス2</a>
+                                <a href="/dashboard/oem_service2.php"></i> ODMサービス2</a>
                             </li>
                             <li>
-                                <a href="/dashboard/about.php"><i class="fa fa-fw fa-dashboard"></i> エー・エス・テックについて</a>
+                                <a href="/dashboard/about.php"></i> エー・エス・テックについて</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="製品紹介">
                         <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseIntro" data-parent="#accordion">
-                            <i class="fa fa-fw fa-wrench"></i>
                             <span class="nav-link-text">製品紹介</span>
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseIntro">
                             <li>
-                                <a href="/dashboard/led_lamps.php"><i class="fa fa-fw fa-dashboard"></i> LED Lamps</a>
+                                <a href="/dashboard/led_lamps.php"></i> LED Lamps</a>
                             </li>
                             <li>
-                                <a href="/dashboard/smd_led.php"><i class="fa fa-fw fa-dashboard"></i> SMD LED</a>
+                                <a href="/dashboard/smd_led.php"></i> SMD LED</a>
                             </li>
                             <li>
-                                <a href="/dashboard/led_highpowered.php"><i class="fa fa-fw fa-dashboard"></i> ハイパワーLED</a>
+                                <a href="/dashboard/led_highpowered.php"></i> ハイパワーLED</a>
                             </li>
                             <li>
-                                <a href="/dashboard/ir_led.php"><i class="fa fa-fw fa-dashboard"></i> IR LED</a>
+                                <a href="/dashboard/ir_led.php"></i> IR LED</a>
                             </li>
                             <li>
-                                <a href="/dashboard/led_bulb.php"><i class="fa fa-fw fa-dashboard"></i> LED 電球</a>
+                                <a href="/dashboard/led_bulb.php"></i> LED 電球</a>
                             </li>
                             <li>
-                                <a href="/dashboard/led_light.php"><i class="fa fa-fw fa-dashboard"></i> LED 照明</a>
+                                <a href="/dashboard/led_light.php"></i> LED 照明</a>
                             </li>
                             <li>
-                                <a href="/dashboard/power_supply.php"><i class="fa fa-fw fa-dashboard"></i> パワーサプライ</a>
+                                <a href="/dashboard/power_supply.php"></i> パワーサプライ</a>
                             </li>
                             <li>
-                                <a href="/dashboard/pcb_assembly.php"><i class="fa fa-fw fa-dashboard"></i> PCB Assembly</a>
+                                <a href="/dashboard/pcb_assembly.php"></i> PCB Assembly</a>
                             </li>
                             <li>
-                                <a href="/dashboard/oem_odm.php"><i class="fa fa-fw fa-dashboard"></i> OEM/ODMサービス</a>
+                                <a href="/dashboard/oem_odm.php"></i> OEM/ODMサービス</a>
                             </li>
                         </ul>
                     </li>
