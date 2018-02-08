@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+require 'connection.php';
+
+$db = $GLOBALS['db'];
+$sql = "SELECT * FROM info WHERE field_name IN ('led_highpowered')";
+$rs = $db->query($sql);
+$raws = $rs->fetchAll();
+
+$arr = [];
+foreach ($raws as $raw) {
+    $arr[$raw['field_name']] = $raw['context'];
+}
+
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
@@ -15,46 +28,10 @@
 
   <DIV class="featured clearfix high-power">
     <H2 class="ac">製品紹介<br><small>ハイパワーLED</small></H2>
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Firefly7090.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Firefly7090.pdf">Firefly 7090</a></p>
-        </div>
-
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Renaissance3030-01.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-01.pdf">Renaissance 3030-01</a></p>
-        </div>
-
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Renaissance3030-02.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-02.pdf">Renaissance 3030-02</a></p>
-        </div>
-
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Renaissance3030-03.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3030-03.pdf">Renaissance 3030-03</a></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Renaissance3535-01.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3535-01.pdf">Renaissance 3535-01</a></p>
-        </div>
-
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Renaissance3535-02.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Renaissance-3535-02.pdf">Renaissance 3535-02</a></p>
-        </div>
-
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Stellar-01.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Stellar-01,02.pdf">Stellar-01</a></p>
-        </div>
-        <div class="col-sm-3">
-            <img src="files/highpowered-led/Stellar-02.png" class="center-block">
-            <p class="text-center"><a href="files/highpowered-led/files/Stellar-01,02.pdf">Stellar-02</a></p>
-        </div>
+    <div class="col-sm-10 col-sm-offset-1">
+    <?php
+        printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['led_highpowered']));
+    ?>
     </div>
   </DIV>
 <?php
