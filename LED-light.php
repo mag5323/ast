@@ -11,7 +11,7 @@ foreach ($raws as $raw) {
         $arr[$raw['field_name']] = $raw['context'];
 }
 
-?><<!DOCTYPE HTML>
+?><!DOCTYPE HTML>
 <HTML>
 <head>
 <?php
