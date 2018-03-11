@@ -25,4 +25,7 @@ $(document).ready(function() {
       var elemBottom = elemTop + $(element).height();
       return elemTop <= docViewBottom;
   }
+
+  var iframe = $('#frame');
+  iframe.contents().find('body').html(iframe.data('content'));
 });

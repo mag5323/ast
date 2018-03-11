@@ -29,9 +29,7 @@ foreach ($raws as $raw) {
   <DIV class="featured clearfix high-power">
     <H2 class="ac">製品紹介<br><small>ハイパワーLED</small></H2>
     <div class="col-sm-10 col-sm-offset-1">
-    <?php
-        printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['led_highpowered']));
-    ?>
+        <iframe id="frame" data-content="<?php echo htmlentities($arr['led_highpowered']); ?>"></iframe>
     </div>
   </DIV>
 <?php

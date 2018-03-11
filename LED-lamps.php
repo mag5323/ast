@@ -38,9 +38,7 @@ td > strong {
 
   <DIV class="featured clearfix">
       <H2 class="ac">製品紹介<br><small>LED Lamps</small></H2>
-	  <?php
-          printf('<iframe src="data:text/html;charset=utf-8,%s"><p>Sorry, this browser does not support iframes.</p></iframe>', htmlentities($arr['led_lamps']));
-      ?>
+      <iframe id="frame" data-content="<?php echo htmlentities($arr['led_lamps']); ?>"></iframe>
   </DIV>
 <?php
 	include __DIR__ . '/requires/footer.php';
