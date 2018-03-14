@@ -28,4 +28,13 @@ $(document).ready(function() {
 
   var iframe = $('#frame');
   iframe.contents().find('body').html(iframe.data('content'));
+  iframe.contents().find('head').append(
+      $("<link/>", {
+        rel: "stylesheet",
+        href: "images/bootstrap.css",
+        type: "text/css"
+      }), [
+        $('<style type="text/css"> body {background: none; padding-top: 30px;} </style>')
+      ]
+  );
 });
